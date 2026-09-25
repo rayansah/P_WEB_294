@@ -1,0 +1,14 @@
+{
+  "booksBackend": [
+    {
+      "id": "6",
+      "title": "1984",
+      "numberOfPages": 328
+    },
+    {
+      "id": "8",
+      "title": "Le comte de montécristo",
+      "numberOfPages": 628
+    }
+  ]
+}
