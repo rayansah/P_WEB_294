@@ -7,7 +7,7 @@ const books = ref({})
 onMounted(async () => {
   try {
     const response = await getBooks()
-    books.value = response.data.slice(1, 5)
+    books.value = response.data.slice(1, 6)
   } finally {
   }
 })
@@ -20,6 +20,7 @@ onMounted(async () => {
       <nav aria-label="Navigation principale">
         <RouterLink :to="{ name: 'home' }">Accueil</RouterLink>
         <RouterLink :to="{ name: 'books' }">Catalogue</RouterLink>
+        <RouterLink :to="{ name: 'add-book' }">Ajouter un livre</RouterLink>
       </nav>
     </header>
     <section class="contenu" aria-labelledby="accueil-titre">
@@ -33,12 +34,13 @@ onMounted(async () => {
            Les cinq derniers livres seront reliés à l’API dans ton développement. -->
       <div class="grille-livres">
         <article v-for="book in books" class="carte-livre">
-          <div class="couverture">Couverture</div>
-          <h3>{{ book.title }}</h3>
-          <p>{{ book.authorFirstName }}</p>
-          <p class="categorie">{{ book.category }}</p>
+          <RouterLink :to="{ name: 'book-detail', params: { id: book.id } }">
+            <div class="couverture">Couverture</div>
+            <h3>{{ book.title }}</h3>
+            <p>{{ book.authorFirstName }}</p>
+            <p class="categorie">{{ book.category }}</p>
+          </RouterLink>
         </article>
-        >
       </div>
     </section>
     <footer>

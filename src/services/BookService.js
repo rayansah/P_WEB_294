@@ -18,3 +18,11 @@ export const getBook = (id) => {
   // Correction : My JSON Server utilise le pluriel même pour un seul item
   return apiClient.get(`/books/${id}`)
 }
+
+export const updateBook = (id, book) => {
+  return apiClient.put(`/books/${id}`, book)
+}
+export const addBook = (book) => {
+  // Correction : My JSON Server utilise le pluriel même pour un seul item
+  return apiClient.post(`/books/`, book)
+}

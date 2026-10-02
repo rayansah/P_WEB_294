@@ -1,7 +1,14 @@
 <!-- Page visuelle autonome : aucun script, import, routeur ni CSS externe. -->
- <script>
-import { ref} from 'vue';
+<script setup>
+import { addBook, getBooks } from '@/services/BookService'
+import { ref } from 'vue'
 
+const book = ref({})
+
+async function handleSubmit() {
+  await addBook(book.value)
+  alert('Votre livre a bien enregistré ')
+}
 </script>
 <template>
   <div class="page">
@@ -19,15 +26,23 @@ import { ref} from 'vue';
     <section class="contenu">
       <h1>Ajouter un ouvrage</h1>
       <p>Renseigne les informations du livre. Tous les champs sont requis.</p>
-      <form class="formulaire">
+      <form @submit.prevent="handleSubmit" class="formulaire">
         <div class="grille-formulaire">
           <div class="champ">
             <label for="titre">Titre</label>
-            <input id="titre" name="titre" type="text" value="" placeholder="Saisir…" required />
+            <input
+              id="titre"
+              name="titre"
+              type="text"
+              value=""
+              placeholder="Saisir…"
+              v-model="book.title"
+              required
+            />
           </div>
           <div class="champ">
             <label for="categorie">Catégorie</label
-            ><select id="categorie" name="categorie" required>
+            ><select id="categorie" name="categorie" v-model="book.category" required>
               <option value="">Choisir une catégorie</option>
               <option>Roman</option>
               <option>Bande dessinée</option>
@@ -37,11 +52,27 @@ import { ref} from 'vue';
           </div>
           <div class="champ">
             <label for="prenom">Prénom de l’auteur</label>
-            <input id="prenom" name="prenom" type="text" value="" placeholder="Saisir…" required />
+            <input
+              id="prenom"
+              name="prenom"
+              type="text"
+              value=""
+              placeholder="Saisir…"
+              v-model="book.authorFirstName"
+              required
+            />
           </div>
           <div class="champ">
             <label for="nom">Nom de l’auteur</label>
-            <input id="nom" name="nom" type="text" value="" placeholder="Saisir…" required />
+            <input
+              id="nom"
+              name="nom"
+              type="text"
+              value=""
+              placeholder="Saisir…"
+              required
+              v-model="book.authorLastName"
+            />
           </div>
           <div class="champ">
             <label for="editeur">Éditeur</label>
@@ -51,12 +82,21 @@ import { ref} from 'vue';
               type="text"
               value=""
               placeholder="Saisir…"
+              v-model="book.publisher"
               required
             />
           </div>
           <div class="champ">
             <label for="annee">Année d’édition</label>
-            <input id="annee" name="annee" type="number" value="" placeholder="Saisir…" required />
+            <input
+              id="annee"
+              name="annee"
+              type="number"
+              value=""
+              placeholder="Saisir…"
+              v-model="book.publicationYear"
+              required
+            />
           </div>
           <div class="champ">
             <label for="pages">Nombre de pages</label>
@@ -67,6 +107,7 @@ import { ref} from 'vue';
               value=""
               placeholder="Saisir…"
               min="1"
+              v-model="book.numberOfPages"
               required
             />
           </div>
@@ -78,6 +119,7 @@ import { ref} from 'vue';
               type="text"
               value=""
               placeholder="Saisir…"
+              v-model="book.coverImage"
               required
             />
           </div>
@@ -90,15 +132,23 @@ import { ref} from 'vue';
             type="text"
             value=""
             placeholder="/extraits/mon-livre.pdf"
+            v-model="book.excerpt"
             required
-          />
+          />summary
         </div>
         <div class="champ">
           <label for="resume">Résumé</label
-          ><textarea id="resume" name="resume" rows="3" placeholder="Saisir…" required></textarea>
+          ><textarea
+            id="resume"
+            name="resume"
+            rows="3"
+            placeholder="Saisir…"
+            v-model="book.summary"
+            required
+          ></textarea>
         </div>
         <div class="actions">
-          <button class="bouton" type="button" title="Maquette statique : action à programmer">
+          <button class="bouton" type="submit" title="Maquette statique : action à programmer">
             Ajouter le livre</button
           ><button type="button" class="bouton secondaire">Annuler</button>
         </div>
