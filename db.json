@@ -1899,6 +1899,19 @@
       ],
       "coverImage": "/images/alcools.jpg",
       "postedBy": "Nina"
+    },
+    {
+      "title": "Dragon Ball - Tome 1",
+      "category": "Roman",
+      "authorFirstName": "rg",
+      "authorLastName": "rwg",
+      "publisher": "rge",
+      "publicationYear": 1,
+      "coverImage": "arg",
+      "numberOfPages": 12,
+      "excerpt": "arg",
+      "summary": "arg",
+      "id": 101
     }
   ]
 }
