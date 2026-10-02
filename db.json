@@ -87,7 +87,7 @@
       "authorLastName": "Rowling",
       "publisher": "Gallimard Jeunesse",
       "publicationYear": 1998,
-      "averageRating": 4.0,
+      "averageRating": 4,
       "comments": [
         "J'ai beaucoup aimé les personnages.",
         "Très agréable à lire."
@@ -277,7 +277,7 @@
       "authorLastName": "Isayama",
       "publisher": "Pika",
       "publicationYear": 2013,
-      "averageRating": 5.0,
+      "averageRating": 5,
       "comments": [
         "Très bon ouvrage.",
         "Je recommande ce livre."
@@ -391,7 +391,7 @@
       "authorLastName": "Goscinny",
       "publisher": "Hachette",
       "publicationYear": 1961,
-      "averageRating": 4.0,
+      "averageRating": 4,
       "comments": [
         "J'ai beaucoup aimé les personnages.",
         "Très agréable à lire."
@@ -581,7 +581,7 @@
       "authorLastName": "Herbert",
       "publisher": "Robert Laffont",
       "publicationYear": 1965,
-      "averageRating": 5.0,
+      "averageRating": 5,
       "comments": [
         "Très bon ouvrage.",
         "Je recommande ce livre."
@@ -695,7 +695,7 @@
       "authorLastName": "Lem",
       "publisher": "Denoël",
       "publicationYear": 1961,
-      "averageRating": 4.0,
+      "averageRating": 4,
       "comments": [
         "J'ai beaucoup aimé les personnages.",
         "Très agréable à lire."
@@ -885,7 +885,7 @@
       "authorLastName": "Rothfuss",
       "publisher": "Bragelonne",
       "publicationYear": 2007,
-      "averageRating": 5.0,
+      "averageRating": 5,
       "comments": [
         "Très bon ouvrage.",
         "Je recommande ce livre."
@@ -999,7 +999,7 @@
       "authorLastName": "de Maupassant",
       "publisher": "Le Livre de Poche",
       "publicationYear": 1885,
-      "averageRating": 4.0,
+      "averageRating": 4,
       "comments": [
         "J'ai beaucoup aimé les personnages.",
         "Très agréable à lire."
@@ -1189,7 +1189,7 @@
       "authorLastName": "Stevenson",
       "publisher": "Gallimard",
       "publicationYear": 1883,
-      "averageRating": 5.0,
+      "averageRating": 5,
       "comments": [
         "Très bon ouvrage.",
         "Je recommande ce livre."
@@ -1303,7 +1303,7 @@
       "authorLastName": "Doyle",
       "publisher": "Le Livre de Poche",
       "publicationYear": 1887,
-      "averageRating": 4.0,
+      "averageRating": 4,
       "comments": [
         "J'ai beaucoup aimé les personnages.",
         "Très agréable à lire."
@@ -1493,7 +1493,7 @@
       "authorLastName": "King",
       "publisher": "Albin Michel",
       "publicationYear": 1986,
-      "averageRating": 5.0,
+      "averageRating": 5,
       "comments": [
         "Très bon ouvrage.",
         "Je recommande ce livre."
@@ -1607,7 +1607,7 @@
       "authorLastName": "Steinbeck",
       "publisher": "Gallimard",
       "publicationYear": 1937,
-      "averageRating": 4.0,
+      "averageRating": 4,
       "comments": [
         "J'ai beaucoup aimé les personnages.",
         "Très agréable à lire."
@@ -1797,7 +1797,7 @@
       "authorLastName": "Camus",
       "publisher": "Gallimard",
       "publicationYear": 1942,
-      "averageRating": 5.0,
+      "averageRating": 5,
       "comments": [
         "Très bon ouvrage.",
         "Je recommande ce livre."
@@ -1899,6 +1899,64 @@
       ],
       "coverImage": "/images/alcools.jpg",
       "postedBy": "Nina"
+    },
+    {
+      "title": "test",
+      "nbPages": 43,
+      "id": 101
+    },
+    {
+      "title": "test2",
+      "category": "Roman",
+      "authorFirstName": "blasco",
+      "authorLastName": "diae",
+      "publisher": "fifa",
+      "publicationYear": 2007,
+      "nbPages": 3,
+      "coverImage": "https://fr.pinterest.com/jeannellylandre/chien/",
+      "excerpt": "https://www.google.com/goto?url=CAEScAHrOzAV1AW004pL1Hix_iUVDNKlTvhf8YwAaDMT_2KZ1II5FWxy2F1j5-VllEsywPjSMfEl1YohnAVi0dEvYeYkirNycL5V_8ENoeNrZ7UWb_CKvbOPLiz6EGnFarkD8TJQ4cP378hY9IVPyjjI9_M",
+      "summary": "UZVOIEGVCEPCPVPV",
+      "id": 102
+    },
+    {
+      "title": "test2",
+      "category": "Roman",
+      "authorFirstName": "blasco",
+      "authorLastName": "diae",
+      "publisher": "fifa",
+      "publicationYear": 2007,
+      "nbPages": 3,
+      "coverImage": "https://fr.pinterest.com/jeannellylandre/chien/",
+      "excerpt": "https://www.google.com/goto?url=CAEScAHrOzAV1AW004pL1Hix_iUVDNKlTvhf8YwAaDMT_2KZ1II5FWxy2F1j5-VllEsywPjSMfEl1YohnAVi0dEvYeYkirNycL5V_8ENoeNrZ7UWb_CKvbOPLiz6EGnFarkD8TJQ4cP378hY9IVPyjjI9_M",
+      "summary": "UZVOIEGVCEPCPVPV",
+      "id": 103
+    },
+    {
+      "title": "test3",
+      "category": "Roman",
+      "authorFirstName": "blasco",
+      "authorLastName": "diae",
+      "publisher": "fifa",
+      "publicationYear": 2007,
+      "nbPages": 3,
+      "coverImage": "https://fr.pinterest.com/jeannellylandre/chien/",
+      "excerpt": "https://www.google.com/goto?url=CAEScAHrOzAV1AW004pL1Hix_iUVDNKlTvhf8YwAaDMT_2KZ1II5FWxy2F1j5-VllEsywPjSMfEl1YohnAVi0dEvYeYkirNycL5V_8ENoeNrZ7UWb_CKvbOPLiz6EGnFarkD8TJQ4cP378hY9IVPyjjI9_M",
+      "summary": "glhuom",
+      "numberOfPages": 1,
+      "id": 104
+    },
+    {
+      "title": "sdfsdf",
+      "category": "Bande dessinée",
+      "authorFirstName": "blasco",
+      "authorLastName": "diae",
+      "publisher": "fifa",
+      "publicationYear": 8,
+      "numberOfPages": 1,
+      "coverImage": "https://fr.pinterest.com/jeannellylandre/chien/",
+      "excerpt": "https://www.google.com/goto?url=CAEScAHrOzAV1AW004pL1Hix_iUVDNKlTvhf8YwAaDMT_2KZ1II5FWxy2F1j5-VllEsywPjSMfEl1YohnAVi0dEvYeYkirNycL5V_8ENoeNrZ7UWb_CKvbOPLiz6EGnFarkD8TJQ4cP378hY9IVPyjjI9_M",
+      "summary": ",jvjlehvlevliuvlivcieveiviy",
+      "id": 105
     }
   ]
 }
