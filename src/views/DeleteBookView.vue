@@ -1,12 +1,32 @@
-<!-- Page visuelle autonome : aucun script, import, routeur ni CSS externe. -->
+<script setup>
+import { getBook, deletBook } from '@/services/BookService'
+import { ref, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const book = ref({})
+//ne s'utilise que lorsque l'on à besoin de composant de base pour le chargement de la page
+onMounted(async () => {
+  try {
+    const response = await getBook(route.params.id)
+    book.value = response.data
+  } finally {
+  }
+})
+
+async function handleDelete() {
+  await deletBook(route.params.id, book.value)
+  alert('Votre livre a bien été supprimé ')
+}
+</script>
 <template>
-<div class="page">
+  <div class="page">
     <header class="entete">
       <button type="button" class="lien-visuel logo">Passion lecture</button>
       <nav aria-label="Navigation principale">
-        <button type="button" class="lien-visuel">Accueil</button>
-        <button type="button" class="lien-visuel">Catalogue</button>
-        <button type="button" class="lien-visuel">Ajouter un livre</button>
+        <RouterLink :to="{ name: 'home' }">Accueil</RouterLink>
+        <RouterLink :to="{ name: 'books' }">Catalogue</RouterLink>
+        <RouterLink :to="{ name: 'add-book' }">Ajouter un livre</RouterLink>
         <button type="button" class="lien-visuel">Mon profil</button>
         <button type="button" class="bouton secondaire">Déconnexion</button>
       </nav>
@@ -15,15 +35,27 @@
     <section class="contenu">
       <h1>Supprimer mon ouvrage</h1>
       <section class="confirmation" aria-labelledby="confirmation-titre">
-        <h2 id="confirmation-titre">Supprimer « Le Petit Prince » ?</h2>
+        <h2 id="confirmation-titre">Supprimer {{ book.title }}</h2>
         <p>Cet ouvrage sera retiré du catalogue. Cette action est définitive.</p>
-        <div class="actions"><button type="button" class="bouton secondaire">Annuler</button><button class="bouton danger" type="button" title="Maquette statique : action à programmer">Confirmer la suppression</button></div>
+        <div class="actions">
+          <RouterLink :to="{ name: 'book-detail' }">
+            <button type="button" class="bouton secondaire">Annuler</button>
+          </RouterLink>
+          <button
+            class="bouton danger"
+            type="button"
+            title="Maquette statique : action à programmer"
+            @click="handleDelete"
+          >
+            Confirmer la suppression
+          </button>
+        </div>
       </section>
     </section>
 
     <footer>
       <strong>Passion lecture · Projet de classe</strong>
-      
+
       <p>Créé par : [prénoms du groupe] &nbsp; · &nbsp; Contact : [adresse e-mail du groupe]</p>
     </footer>
   </div>
@@ -49,22 +81,36 @@
   margin: 0 auto;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
-h1 { font-size: 32px; }
-h2 { font-size: 24px; }
-h3 { font-size: 16px; }
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 16px;
+}
 
 /* Les liens gardent la couleur de leur parent. */
 a {
   color: inherit;
   text-decoration: none;
 }
-a:hover { text-decoration: underline; }
-a:focus-visible, button:focus-visible, input:focus-visible,
-select:focus-visible, textarea:focus-visible {
+a:hover {
+  text-decoration: underline;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
   outline: 3px solid #276447;
   outline-offset: 3px;
 }
@@ -108,12 +154,25 @@ footer p {
   gap: 24px;
   padding: 64px;
 }
-.titre-accueil { font-size: 34px; }
-.introduction { font-size: 18px; }
-.sous-titre { font-size: 22px; }
-.petit, .discret { font-size: 14px; }
-.discret { color: #627269; }
-.lien { color: #276447; }
+.titre-accueil {
+  font-size: 34px;
+}
+.introduction {
+  font-size: 18px;
+}
+.sous-titre {
+  font-size: 22px;
+}
+.petit,
+.discret {
+  font-size: 14px;
+}
+.discret {
+  color: #627269;
+}
+.lien {
+  color: #276447;
+}
 .bouton {
   display: inline-flex;
   align-items: center;
@@ -137,9 +196,15 @@ footer p {
   background-color: white;
   color: #25332d;
 }
-.secondaire:hover { background-color: #eef2ef; }
-.danger { background-color: #a43832; }
-.danger:hover { background-color: #842b27; }
+.secondaire:hover {
+  background-color: #eef2ef;
+}
+.danger {
+  background-color: #a43832;
+}
+.danger:hover {
+  background-color: #842b27;
+}
 .actions {
   display: flex;
   flex-wrap: wrap;
@@ -161,8 +226,12 @@ footer p {
   padding: 12px;
   border: 1px solid #d8dfd9;
 }
-.carte-livre p { font-size: 13px; }
-.categorie { color: #627269; }
+.carte-livre p {
+  font-size: 13px;
+}
+.categorie {
+  color: #627269;
+}
 /* Ces blocs remplacent les couvertures, comme dans la maquette. */
 .couverture {
   display: flex;
@@ -184,15 +253,21 @@ footer p {
   margin: 0;
   list-style: none;
 }
-.ligne-livre, .ligne-admin, .ligne-profil {
+.ligne-livre,
+.ligne-admin,
+.ligne-profil {
   display: grid;
   align-items: start;
   gap: 20px;
   padding: 18px;
   background-color: #f7f9f7;
 }
-.ligne-livre { grid-template-columns: 330fr 260fr 170fr 130fr; }
-.ligne-admin { grid-template-columns: 300fr 220fr 432fr; }
+.ligne-livre {
+  grid-template-columns: 330fr 260fr 170fr 130fr;
+}
+.ligne-admin {
+  grid-template-columns: 300fr 220fr 432fr;
+}
 .ligne-profil {
   width: 100%;
   grid-template-columns: 300fr 360fr 300fr;
@@ -200,13 +275,30 @@ footer p {
   padding: 20px;
   background-color: #f3f6f3;
 }
-.ligne-profil .bouton { justify-self: start; }
-.titre-livre { font-size: 18px; font-weight: bold; }
-.statistiques { display: flex; flex-wrap: wrap; gap: 40px; font-size: 20px; }
+.ligne-profil .bouton {
+  justify-self: start;
+}
+.titre-livre {
+  font-size: 18px;
+  font-weight: bold;
+}
+.statistiques {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  font-size: 20px;
+}
 
 /* 6. Fiche d'un livre */
-.presentation-livre { display: flex; gap: 32px; width: 100%; }
-.grande { flex: 0 0 210px; height: 270px; }
+.presentation-livre {
+  display: flex;
+  gap: 32px;
+  width: 100%;
+}
+.grande {
+  flex: 0 0 210px;
+  height: 270px;
+}
 .informations-livre {
   display: flex;
   flex-direction: column;
@@ -214,20 +306,40 @@ footer p {
   gap: 10px;
   min-width: 0;
 }
-.auteur { font-size: 20px; }
+.auteur {
+  font-size: 20px;
+}
 
 /* 7. Formulaires : un label est associé à chaque champ */
-.formulaire { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; width: 100%; }
-.connexion { max-width: 600px; }
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+.connexion {
+  max-width: 600px;
+}
 .grille-formulaire {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
   width: 100%;
 }
-.champ { display: flex; flex-direction: column; gap: 7px; width: 100%; }
-.champ label { font-size: 15px; font-weight: bold; }
-input, select, textarea {
+.champ {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+}
+.champ label {
+  font-size: 15px;
+  font-weight: bold;
+}
+input,
+select,
+textarea {
   width: 100%;
   min-width: 0;
   height: 46px;
@@ -239,13 +351,38 @@ input, select, textarea {
   font: inherit;
   font-size: 15px;
 }
-input::placeholder, textarea::placeholder { color: #6b756f; opacity: 1; }
-textarea { min-height: 88px; resize: vertical; }
-.notation { padding: 0; border: 0; margin: 0; }
-.notation legend { margin-bottom: 24px; padding: 0; font-size: 22px; font-weight: bold; }
+input::placeholder,
+textarea::placeholder {
+  color: #6b756f;
+  opacity: 1;
+}
+textarea {
+  min-height: 88px;
+  resize: vertical;
+}
+.notation {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+.notation legend {
+  margin-bottom: 24px;
+  padding: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
 /* Les boutons radio permettent de sélectionner une note sans JavaScript. */
-.choix-note { position: relative; cursor: pointer; }
-.choix-note input { position: absolute; width: 1px; height: 1px; opacity: 0; padding: 0; }
+.choix-note {
+  position: relative;
+  cursor: pointer;
+}
+.choix-note input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  padding: 0;
+}
 .choix-note span {
   display: inline-flex;
   justify-content: center;
@@ -255,8 +392,14 @@ textarea { min-height: 88px; resize: vertical; }
   border: 1px solid #b9c4bd;
   border-radius: 8px;
 }
-.choix-note input:checked + span { background-color: #276447; color: white; }
-.choix-note input:focus-visible + span { outline: 3px solid #276447; outline-offset: 3px; }
+.choix-note input:checked + span {
+  background-color: #276447;
+  color: white;
+}
+.choix-note input:focus-visible + span {
+  outline: 3px solid #276447;
+  outline-offset: 3px;
+}
 .confirmation {
   display: flex;
   flex-direction: column;
@@ -269,22 +412,58 @@ textarea { min-height: 88px; resize: vertical; }
 
 /* 8. Adaptation aux tablettes et téléphones */
 @media (max-width: 1000px) {
-  .entete { flex-wrap: wrap; }
-  .contenu { padding: 40px; }
-  .grille-livres { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .entete {
+    flex-wrap: wrap;
+  }
+  .contenu {
+    padding: 40px;
+  }
+  .grille-livres {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 @media (max-width: 600px) {
-  .entete, footer { padding: 24px; }
-  .contenu { padding: 32px 24px; }
-  .logo { width: auto; }
-  nav { gap: 16px; }
-  h1, .titre-accueil { font-size: 28px; }
-  .grille-livres, .grille-formulaire { grid-template-columns: 1fr; }
-  .ligne-livre, .ligne-admin, .ligne-profil { grid-template-columns: 1fr; gap: 12px; }
-  .presentation-livre { flex-direction: column; }
-  .grande { flex: auto; width: 210px; }
-  .confirmation { padding: 24px; }
-  .statistiques { flex-direction: column; gap: 16px; }
+  .entete,
+  footer {
+    padding: 24px;
+  }
+  .contenu {
+    padding: 32px 24px;
+  }
+  .logo {
+    width: auto;
+  }
+  nav {
+    gap: 16px;
+  }
+  h1,
+  .titre-accueil {
+    font-size: 28px;
+  }
+  .grille-livres,
+  .grille-formulaire {
+    grid-template-columns: 1fr;
+  }
+  .ligne-livre,
+  .ligne-admin,
+  .ligne-profil {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .presentation-livre {
+    flex-direction: column;
+  }
+  .grande {
+    flex: auto;
+    width: 210px;
+  }
+  .confirmation {
+    padding: 24px;
+  }
+  .statistiques {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 /* Liens visuels sans navigation : aucune autre page n’est nécessaire. */
@@ -297,10 +476,21 @@ textarea { min-height: 88px; resize: vertical; }
   text-align: left;
   cursor: pointer;
 }
-.lien-visuel:hover { text-decoration: underline; }
-.lien-visuel.logo { font-size: 24px; font-weight: bold; }
-.lien-visuel.titre-livre { font-size: 18px; font-weight: bold; }
-.lien-visuel.lien { color: #276447; }
-.lien-visuel.petit { font-size: 14px; }
-
+.lien-visuel:hover {
+  text-decoration: underline;
+}
+.lien-visuel.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.lien-visuel.titre-livre {
+  font-size: 18px;
+  font-weight: bold;
+}
+.lien-visuel.lien {
+  color: #276447;
+}
+.lien-visuel.petit {
+  font-size: 14px;
+}
 </style>

@@ -1,63 +1,6 @@
 {
   "books": [
     {
-      "id": 1,
-      "title": "Le Petit Prince",
-      "category": "Roman",
-      "numberOfPages": 96,
-      "excerpt": "/extraits/le-petit-prince.pdf",
-      "summary": "Un aviateur perdu dans le désert rencontre un petit prince venu d'une autre planète. À travers ses voyages, le jeune garçon découvre l'amitié, l'amour et les contradictions des adultes.",
-      "authorFirstName": "Antoine",
-      "authorLastName": "de Saint-Exupéry",
-      "publisher": "Gallimard",
-      "publicationYear": 1943,
-      "averageRating": 3.6,
-      "comments": [
-        "Une histoire intéressante.",
-        "Le récit est vraiment prenant."
-      ],
-      "coverImage": "/images/le-petit-prince.jpg",
-      "postedBy": "Jeremy"
-    },
-    {
-      "id": 2,
-      "title": "1984",
-      "category": "Roman",
-      "numberOfPages": 376,
-      "excerpt": "/extraits/1984.pdf",
-      "summary": "Dans une société surveillée par Big Brother, Winston Smith tente de préserver sa liberté de pensée. Sa révolte l'oppose à un pouvoir qui contrôle les informations et la vie des habitants.",
-      "authorFirstName": "George",
-      "authorLastName": "Orwell",
-      "publisher": "Gallimard",
-      "publicationYear": 1949,
-      "averageRating": 3.7,
-      "comments": [
-        "Je recommande ce livre.",
-        "J'ai beaucoup aimé les personnages."
-      ],
-      "coverImage": "/images/1984.jpg",
-      "postedBy": "Rayan"
-    },
-    {
-      "id": 3,
-      "title": "Les Misérables",
-      "category": "Roman",
-      "numberOfPages": 1232,
-      "excerpt": "/extraits/les-miserables.pdf",
-      "summary": "Après des années de prison, Jean Valjean cherche à devenir un homme meilleur. Son parcours croise celui de Cosette et de l'inspecteur Javert, dans une France marquée par la misère et les injustices.",
-      "authorFirstName": "Victor",
-      "authorLastName": "Hugo",
-      "publisher": "Le Livre de Poche",
-      "publicationYear": 1862,
-      "averageRating": 3.8,
-      "comments": [
-        "Un classique à découvrir.",
-        "Une lecture qui vaut le détour."
-      ],
-      "coverImage": "/images/les-miserables.jpg",
-      "postedBy": "Yassine"
-    },
-    {
       "id": 4,
       "title": "Le Seigneur des Anneaux",
       "category": "Fantasy",

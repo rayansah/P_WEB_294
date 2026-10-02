@@ -3,6 +3,7 @@ import BooksView from '@/views/BooksView.vue'
 import HomeView from '@/views/HomeView.vue'
 import EditBookView from '@/views/EditBookView.vue'
 import AddBookView from '@/views/AddBookView.vue'
+import DeleteBookView from '@/views/DeleteBookView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,7 +14,7 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/booksFrontend',
+      path: '/books',
       name: 'books',
       component: BooksView,
     },
@@ -32,6 +33,11 @@ const router = createRouter({
       path: '/book/add',
       name: 'add-book',
       component: AddBookView,
+    },
+    {
+      path: '/book/:id/delete',
+      name: 'delete-book',
+      component: DeleteBookView,
     },
   ],
 })

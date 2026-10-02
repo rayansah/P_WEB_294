@@ -45,7 +45,10 @@ onMounted(async () => {
           <RouterLink :to="{ name: 'edit-book', params: { id: book.id } }">
             <button class="bouton secondaire" type="button">Modifier mon ouvrage</button>
           </RouterLink>
-          <button class="bouton secondaire" type="button">Supprimer mon ouvrage</button>
+
+          <RouterLink :to="{ name: 'delete-book', params: { id: book.id } }">
+            <button class="bouton secondaire" type="button">Supprimer mon ouvrage</button>
+          </RouterLink>
         </div>
         <h2 class="sous-titre">Donner mon avis</h2>
         <div class="actions" aria-label="Note sur cinq">

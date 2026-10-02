@@ -26,3 +26,7 @@ export const addBook = (book) => {
   // Correction : My JSON Server utilise le pluriel même pour un seul item
   return apiClient.post(`/books/`, book)
 }
+
+export const deletBook = (id, book) => {
+  return apiClient.delete(`/books/${id}`, book)
+}
