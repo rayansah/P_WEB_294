@@ -1,76 +1,34 @@
-<script setup>
-import { getBook } from '@/services/BookService'
-import { ref, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
-
-const route = useRoute()
-const book = ref(null)
-
-onMounted(async () => {
-  try {
-    const response = await getBook(route.params.id)
-    book.value = response.data
-  } finally {
-  }
-})
-</script>
-
+<!-- Page visuelle autonome : aucun script, import, routeur ni CSS externe. -->
 <template>
-  <div class="page book-detail">
+<div class="page">
     <header class="entete">
-      <RouterLink class="logo" :to="{ name: 'home' }">Passion lecture</RouterLink>
+      <button type="button" class="lien-visuel logo">Passion lecture</button>
       <nav aria-label="Navigation principale">
-        <RouterLink :to="{ name: 'home' }">Accueil</RouterLink>
-        <RouterLink :to="{ name: 'books' }">Catalogue</RouterLink>
+        <button type="button" class="lien-visuel">Accueil</button>
+        <button type="button" class="lien-visuel">Catalogue</button>
+        <button type="button" class="lien-visuel">Ajouter un livre</button>
+        <button type="button" class="lien-visuel">Mon profil</button>
+        <button type="button" class="bouton secondaire">Déconnexion</button>
       </nav>
     </header>
-    <section class="contenu" aria-label="Détail du livre">
-      <RouterLink class="lien" :to="{ name: 'books' }">← Retour au catalogue</RouterLink>
-      <div class="container formulaire" v-if="book">
-        <div class="presentation-livre">
-          <div class="couverture grande">{{ book.title }}</div>
-          <div class="informations-livre">
-            <h1>{{ book.title }}</h1>
-            <div>{{ book.numberOfPages }} pages</div>
-            <!-- Ne pas inventer les propriétés absentes de db.json. -->
-            <p class="texte-manquant">Auteur, catégorie et édition à renseigner.</p>
-            <button class="bouton" type="button">Lire l’extrait PDF</button>
-          </div>
-        </div>
-        <h2 class="sous-titre">Résumé</h2>
-        <p class="texte-manquant">Le résumé de l’ouvrage sera affiché ici.</p>
-        <!-- Actions visuelles seulement. Les droits et fonctions seront ajoutés plus tard. -->
-        <div class="actions">
-          <button class="bouton secondaire" type="button">Modifier mon ouvrage</button>
-          <button class="bouton secondaire" type="button">Supprimer mon ouvrage</button>
-        </div>
-        <h2 class="sous-titre">Donner mon avis</h2>
-        <div class="actions" aria-label="Note sur cinq">
-          <button class="bouton secondaire" type="button">0</button>
-          <button class="bouton secondaire" type="button">1</button>
-          <button class="bouton secondaire" type="button">2</button>
-          <button class="bouton secondaire" type="button">3</button>
-          <button class="bouton secondaire" type="button">4</button>
-          <button class="bouton secondaire" type="button">5</button>
-        </div>
-        <div class="champ">
-          <label for="commentaire">Mon commentaire</label>
-          <textarea id="commentaire" rows="3" placeholder="Écris ce que tu as pensé de ce livre…"></textarea>
-        </div>
-        <button class="bouton" type="button">Publier mon avis</button>
-        <h2 class="sous-titre">Commentaires</h2>
-        <p class="texte-manquant">Les commentaires et la moyenne des notes seront affichés ici.</p>
-      </div>
+
+    <section class="contenu">
+      <h1>Profil de Jeremie</h1>
+      <p>Membre depuis le 15 septembre 2026</p>
+      <div class="statistiques"><strong>1 ouvrage proposé</strong><strong>2 appréciations</strong><strong>2 commentaires</strong></div>
+      <h2>Ouvrages proposés</h2>
+      <div class="ligne-profil"><button type="button" class="lien-visuel titre-livre">Le Petit Prince</button><span>Antoine de Saint-Exupéry</span><button type="button" class="bouton">Voir le livre</button></div>
     </section>
+
     <footer>
       <strong>Passion lecture · Projet de classe</strong>
-      <p>Créé par : [prénoms du groupe] · Contact : [adresse e-mail du groupe]</p>
+      
+      <p>Créé par : [prénoms du groupe] &nbsp; · &nbsp; Contact : [adresse e-mail du groupe]</p>
     </footer>
   </div>
 </template>
 
 <style scoped>
-
 /* 1. Réglages communs à toutes les pages */
 * {
   box-sizing: border-box;
@@ -343,10 +301,5 @@ textarea { min-height: 88px; resize: vertical; }
 .lien-visuel.titre-livre { font-size: 18px; font-weight: bold; }
 .lien-visuel.lien { color: #276447; }
 .lien-visuel.petit { font-size: 14px; }
-
-
-.page { min-height: 100vh; }
-.texte-manquant { color: #627269; font-size: 14px; }
-.ligne-api { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding: 18px; background: #f7f9f7; }
 
 </style>

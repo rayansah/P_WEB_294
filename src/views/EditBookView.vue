@@ -1,76 +1,70 @@
-<script setup>
-import { getBook } from '@/services/BookService'
-import { ref, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
-
-const route = useRoute()
-const book = ref(null)
-
-onMounted(async () => {
-  try {
-    const response = await getBook(route.params.id)
-    book.value = response.data
-  } finally {
-  }
-})
-</script>
-
+<!-- Page visuelle autonome : aucun script, import, routeur ni CSS externe. -->
 <template>
-  <div class="page book-detail">
+<div class="page">
     <header class="entete">
-      <RouterLink class="logo" :to="{ name: 'home' }">Passion lecture</RouterLink>
+      <button type="button" class="lien-visuel logo">Passion lecture</button>
       <nav aria-label="Navigation principale">
-        <RouterLink :to="{ name: 'home' }">Accueil</RouterLink>
-        <RouterLink :to="{ name: 'books' }">Catalogue</RouterLink>
+        <button type="button" class="lien-visuel">Accueil</button>
+        <button type="button" class="lien-visuel">Catalogue</button>
+        <button type="button" class="lien-visuel">Ajouter un livre</button>
+        <button type="button" class="lien-visuel">Mon profil</button>
+        <button type="button" class="bouton secondaire">Déconnexion</button>
       </nav>
     </header>
-    <section class="contenu" aria-label="Détail du livre">
-      <RouterLink class="lien" :to="{ name: 'books' }">← Retour au catalogue</RouterLink>
-      <div class="container formulaire" v-if="book">
-        <div class="presentation-livre">
-          <div class="couverture grande">{{ book.title }}</div>
-          <div class="informations-livre">
-            <h1>{{ book.title }}</h1>
-            <div>{{ book.numberOfPages }} pages</div>
-            <!-- Ne pas inventer les propriétés absentes de db.json. -->
-            <p class="texte-manquant">Auteur, catégorie et édition à renseigner.</p>
-            <button class="bouton" type="button">Lire l’extrait PDF</button>
-          </div>
+
+    <section class="contenu">
+      <h1>Modifier mon ouvrage</h1>
+      <p>Renseigne les informations du livre. Tous les champs sont requis.</p>
+      <form class="formulaire">
+        <div class="grille-formulaire">
+<div class="champ">
+          <label for="titre">Titre</label>
+          <input id="titre" name="titre" type="text" value="Le Petit Prince" placeholder="Saisir…" required>
         </div>
-        <h2 class="sous-titre">Résumé</h2>
-        <p class="texte-manquant">Le résumé de l’ouvrage sera affiché ici.</p>
-        <!-- Actions visuelles seulement. Les droits et fonctions seront ajoutés plus tard. -->
-        <div class="actions">
-          <button class="bouton secondaire" type="button">Modifier mon ouvrage</button>
-          <button class="bouton secondaire" type="button">Supprimer mon ouvrage</button>
+<div class="champ"><label for="categorie">Catégorie</label><select id="categorie" name="categorie" required><option value="">Choisir une catégorie</option><option selected>Roman</option><option>Bande dessinée</option><option>Manga</option><option>Livre</option></select></div>
+<div class="champ">
+          <label for="prenom">Prénom de l’auteur</label>
+          <input id="prenom" name="prenom" type="text" value="Antoine" placeholder="Saisir…" required>
         </div>
-        <h2 class="sous-titre">Donner mon avis</h2>
-        <div class="actions" aria-label="Note sur cinq">
-          <button class="bouton secondaire" type="button">0</button>
-          <button class="bouton secondaire" type="button">1</button>
-          <button class="bouton secondaire" type="button">2</button>
-          <button class="bouton secondaire" type="button">3</button>
-          <button class="bouton secondaire" type="button">4</button>
-          <button class="bouton secondaire" type="button">5</button>
+<div class="champ">
+          <label for="nom">Nom de l’auteur</label>
+          <input id="nom" name="nom" type="text" value="de Saint-Exupéry" placeholder="Saisir…" required>
+        </div>
+<div class="champ">
+          <label for="editeur">Éditeur</label>
+          <input id="editeur" name="editeur" type="text" value="Gallimard" placeholder="Saisir…" required>
+        </div>
+<div class="champ">
+          <label for="annee">Année d’édition</label>
+          <input id="annee" name="annee" type="number" value="1999" placeholder="Saisir…" required>
+        </div>
+<div class="champ">
+          <label for="pages">Nombre de pages</label>
+          <input id="pages" name="pages" type="number" value="96" placeholder="Saisir…" min="1" required>
+        </div>
+<div class="champ">
+          <label for="couverture">Image de couverture (chemin)</label>
+          <input id="couverture" name="couverture" type="text" value="/images/petit-prince.jpg" placeholder="Saisir…" required>
+        </div>
         </div>
         <div class="champ">
-          <label for="commentaire">Mon commentaire</label>
-          <textarea id="commentaire" rows="3" placeholder="Écris ce que tu as pensé de ce livre…"></textarea>
+          <label for="extrait">Extrait PDF (chemin relatif)</label>
+          <input id="extrait" name="extrait" type="text" value="/extraits/petit-prince.pdf" placeholder="/extraits/mon-livre.pdf" required>
         </div>
-        <button class="bouton" type="button">Publier mon avis</button>
-        <h2 class="sous-titre">Commentaires</h2>
-        <p class="texte-manquant">Les commentaires et la moyenne des notes seront affichés ici.</p>
-      </div>
+        <div class="champ"><label for="resume">Résumé</label><textarea id="resume" name="resume" rows="3" placeholder="Saisir…" required>Un aviateur rencontre un petit prince venu d’une autre planète…</textarea></div>
+        <div class="actions"><button class="bouton" type="button" title="Maquette statique : action à programmer">Enregistrer les modifications</button><button type="button" class="bouton secondaire">Annuler</button></div>
+      </form>
     </section>
+
     <footer>
       <strong>Passion lecture · Projet de classe</strong>
-      <p>Créé par : [prénoms du groupe] · Contact : [adresse e-mail du groupe]</p>
+      
+      <p>Créé par : [prénoms du groupe] &nbsp; · &nbsp; Contact : [adresse e-mail du groupe]</p>
     </footer>
   </div>
 </template>
 
 <style scoped>
-
 /* 1. Réglages communs à toutes les pages */
 * {
   box-sizing: border-box;
@@ -343,10 +337,5 @@ textarea { min-height: 88px; resize: vertical; }
 .lien-visuel.titre-livre { font-size: 18px; font-weight: bold; }
 .lien-visuel.lien { color: #276447; }
 .lien-visuel.petit { font-size: 14px; }
-
-
-.page { min-height: 100vh; }
-.texte-manquant { color: #627269; font-size: 14px; }
-.ligne-api { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding: 18px; background: #f7f9f7; }
 
 </style>

@@ -1,14 +1,1904 @@
 {
-  "booksBackend": [
+  "books": [
     {
-      "id": "6",
-      "title": "1984",
-      "numberOfPages": 328
+      "id": 1,
+      "title": "Le Petit Prince",
+      "category": "Roman",
+      "numberOfPages": 96,
+      "excerpt": "/extraits/le-petit-prince.pdf",
+      "summary": "Résumé de Le Petit Prince. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Antoine",
+      "authorLastName": "de Saint-Exupéry",
+      "publisher": "Gallimard",
+      "publicationYear": 1943,
+      "averageRating": 3.6,
+      "comments": [
+        "Une histoire intéressante.",
+        "Le récit est vraiment prenant."
+      ],
+      "coverImage": "/images/le-petit-prince.jpg",
+      "postedBy": "Jeremy"
     },
     {
-      "id": "8",
-      "title": "Le comte de montécristo",
-      "numberOfPages": 628
+      "id": 2,
+      "title": "1984",
+      "category": "Roman",
+      "numberOfPages": 376,
+      "excerpt": "/extraits/1984.pdf",
+      "summary": "Résumé de 1984. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "George",
+      "authorLastName": "Orwell",
+      "publisher": "Gallimard",
+      "publicationYear": 1949,
+      "averageRating": 3.7,
+      "comments": [
+        "Je recommande ce livre.",
+        "J'ai beaucoup aimé les personnages."
+      ],
+      "coverImage": "/images/1984.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 3,
+      "title": "Les Misérables",
+      "category": "Roman",
+      "numberOfPages": 1232,
+      "excerpt": "/extraits/les-miserables.pdf",
+      "summary": "Résumé de Les Misérables. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Victor",
+      "authorLastName": "Hugo",
+      "publisher": "Le Livre de Poche",
+      "publicationYear": 1862,
+      "averageRating": 3.8,
+      "comments": [
+        "Un classique à découvrir.",
+        "Une lecture qui vaut le détour."
+      ],
+      "coverImage": "/images/les-miserables.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 4,
+      "title": "Le Seigneur des Anneaux",
+      "category": "Fantasy",
+      "numberOfPages": 1216,
+      "excerpt": "/extraits/le-seigneur-des-anneaux.pdf",
+      "summary": "Résumé de Le Seigneur des Anneaux. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "J.R.R.",
+      "authorLastName": "Tolkien",
+      "publisher": "Christian Bourgois",
+      "publicationYear": 1954,
+      "averageRating": 3.9,
+      "comments": [
+        "Le récit est vraiment prenant.",
+        "Très bon ouvrage."
+      ],
+      "coverImage": "/images/le-seigneur-des-anneaux.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 5,
+      "title": "Harry Potter à l'école des sorciers",
+      "category": "Fantasy",
+      "numberOfPages": 320,
+      "excerpt": "/extraits/harry-potter-a-lecole-des-sorciers.pdf",
+      "summary": "Résumé de Harry Potter à l'école des sorciers. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "J.K.",
+      "authorLastName": "Rowling",
+      "publisher": "Gallimard Jeunesse",
+      "publicationYear": 1998,
+      "averageRating": 4.0,
+      "comments": [
+        "J'ai beaucoup aimé les personnages.",
+        "Très agréable à lire."
+      ],
+      "coverImage": "/images/harry-potter-a-lecole-des-sorciers.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 6,
+      "title": "L'Étranger",
+      "category": "Roman",
+      "numberOfPages": 184,
+      "excerpt": "/extraits/letranger.pdf",
+      "summary": "Résumé de L'Étranger. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Albert",
+      "authorLastName": "Camus",
+      "publisher": "Gallimard",
+      "publicationYear": 1942,
+      "averageRating": 4.1,
+      "comments": [
+        "Une lecture qui vaut le détour.",
+        "Une histoire intéressante."
+      ],
+      "coverImage": "/images/letranger.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 7,
+      "title": "Germinal",
+      "category": "Roman",
+      "numberOfPages": 592,
+      "excerpt": "/extraits/germinal.pdf",
+      "summary": "Résumé de Germinal. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Émile",
+      "authorLastName": "Zola",
+      "publisher": "Le Livre de Poche",
+      "publicationYear": 1885,
+      "averageRating": 4.2,
+      "comments": [
+        "Très bon ouvrage.",
+        "Je recommande ce livre."
+      ],
+      "coverImage": "/images/germinal.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 8,
+      "title": "Notre-Dame de Paris",
+      "category": "Roman",
+      "numberOfPages": 704,
+      "excerpt": "/extraits/notre-dame-de-paris.pdf",
+      "summary": "Résumé de Notre-Dame de Paris. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Victor",
+      "authorLastName": "Hugo",
+      "publisher": "Gallimard",
+      "publicationYear": 1831,
+      "averageRating": 4.3,
+      "comments": [
+        "Très agréable à lire.",
+        "Un classique à découvrir."
+      ],
+      "coverImage": "/images/notre-dame-de-paris.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 9,
+      "title": "Candide",
+      "category": "Roman",
+      "numberOfPages": 192,
+      "excerpt": "/extraits/candide.pdf",
+      "summary": "Résumé de Candide. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Voltaire",
+      "authorLastName": "",
+      "publisher": "Gallimard",
+      "publicationYear": 1759,
+      "averageRating": 4.4,
+      "comments": [
+        "Une histoire intéressante.",
+        "Le récit est vraiment prenant."
+      ],
+      "coverImage": "/images/candide.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 10,
+      "title": "Madame Bovary",
+      "category": "Roman",
+      "numberOfPages": 528,
+      "excerpt": "/extraits/madame-bovary.pdf",
+      "summary": "Résumé de Madame Bovary. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Gustave",
+      "authorLastName": "Flaubert",
+      "publisher": "Gallimard",
+      "publicationYear": 1857,
+      "averageRating": 4.5,
+      "comments": [
+        "Je recommande ce livre.",
+        "J'ai beaucoup aimé les personnages."
+      ],
+      "coverImage": "/images/madame-bovary.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 11,
+      "title": "One Piece - Tome 1",
+      "category": "Manga",
+      "numberOfPages": 208,
+      "excerpt": "/extraits/one-piece---tome-1.pdf",
+      "summary": "Résumé de One Piece - Tome 1. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Eiichiro",
+      "authorLastName": "Oda",
+      "publisher": "Glénat",
+      "publicationYear": 2000,
+      "averageRating": 4.6,
+      "comments": [
+        "Un classique à découvrir.",
+        "Une lecture qui vaut le détour."
+      ],
+      "coverImage": "/images/one-piece---tome-1.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 12,
+      "title": "Naruto - Tome 1",
+      "category": "Manga",
+      "numberOfPages": 192,
+      "excerpt": "/extraits/naruto---tome-1.pdf",
+      "summary": "Résumé de Naruto - Tome 1. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Masashi",
+      "authorLastName": "Kishimoto",
+      "publisher": "Kana",
+      "publicationYear": 2002,
+      "averageRating": 4.7,
+      "comments": [
+        "Le récit est vraiment prenant.",
+        "Très bon ouvrage."
+      ],
+      "coverImage": "/images/naruto---tome-1.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 13,
+      "title": "Dragon Ball - Tome 1",
+      "category": "Manga",
+      "numberOfPages": 192,
+      "excerpt": "/extraits/dragon-ball---tome-1.pdf",
+      "summary": "Résumé de Dragon Ball - Tome 1. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Akira",
+      "authorLastName": "Toriyama",
+      "publisher": "Glénat",
+      "publicationYear": 1993,
+      "averageRating": 4.8,
+      "comments": [
+        "J'ai beaucoup aimé les personnages.",
+        "Très agréable à lire."
+      ],
+      "coverImage": "/images/dragon-ball---tome-1.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 14,
+      "title": "Death Note - Tome 1",
+      "category": "Manga",
+      "numberOfPages": 200,
+      "excerpt": "/extraits/death-note---tome-1.pdf",
+      "summary": "Résumé de Death Note - Tome 1. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Tsugumi",
+      "authorLastName": "Ohba",
+      "publisher": "Kana",
+      "publicationYear": 2007,
+      "averageRating": 4.9,
+      "comments": [
+        "Une lecture qui vaut le détour.",
+        "Une histoire intéressante."
+      ],
+      "coverImage": "/images/death-note---tome-1.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 15,
+      "title": "Attack on Titan - Tome 1",
+      "category": "Manga",
+      "numberOfPages": 192,
+      "excerpt": "/extraits/attack-on-titan---tome-1.pdf",
+      "summary": "Résumé de Attack on Titan - Tome 1. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Hajime",
+      "authorLastName": "Isayama",
+      "publisher": "Pika",
+      "publicationYear": 2013,
+      "averageRating": 5.0,
+      "comments": [
+        "Très bon ouvrage.",
+        "Je recommande ce livre."
+      ],
+      "coverImage": "/images/attack-on-titan---tome-1.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 16,
+      "title": "Demon Slayer - Tome 1",
+      "category": "Manga",
+      "numberOfPages": 192,
+      "excerpt": "/extraits/demon-slayer---tome-1.pdf",
+      "summary": "Résumé de Demon Slayer - Tome 1. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Koyoharu",
+      "authorLastName": "Gotouge",
+      "publisher": "Panini Manga",
+      "publicationYear": 2017,
+      "averageRating": 3.5,
+      "comments": [
+        "Très agréable à lire.",
+        "Un classique à découvrir."
+      ],
+      "coverImage": "/images/demon-slayer---tome-1.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 17,
+      "title": "My Hero Academia - Tome 1",
+      "category": "Manga",
+      "numberOfPages": 192,
+      "excerpt": "/extraits/my-hero-academia---tome-1.pdf",
+      "summary": "Résumé de My Hero Academia - Tome 1. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Kohei",
+      "authorLastName": "Horikoshi",
+      "publisher": "Ki-oon",
+      "publicationYear": 2016,
+      "averageRating": 3.6,
+      "comments": [
+        "Une histoire intéressante.",
+        "Le récit est vraiment prenant."
+      ],
+      "coverImage": "/images/my-hero-academia---tome-1.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 18,
+      "title": "Jujutsu Kaisen - Tome 1",
+      "category": "Manga",
+      "numberOfPages": 192,
+      "excerpt": "/extraits/jujutsu-kaisen---tome-1.pdf",
+      "summary": "Résumé de Jujutsu Kaisen - Tome 1. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Gege",
+      "authorLastName": "Akutami",
+      "publisher": "Ki-oon",
+      "publicationYear": 2020,
+      "averageRating": 3.7,
+      "comments": [
+        "Je recommande ce livre.",
+        "J'ai beaucoup aimé les personnages."
+      ],
+      "coverImage": "/images/jujutsu-kaisen---tome-1.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 19,
+      "title": "Bleach - Tome 1",
+      "category": "Manga",
+      "numberOfPages": 192,
+      "excerpt": "/extraits/bleach---tome-1.pdf",
+      "summary": "Résumé de Bleach - Tome 1. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Tite",
+      "authorLastName": "Kubo",
+      "publisher": "Glénat",
+      "publicationYear": 2003,
+      "averageRating": 3.8,
+      "comments": [
+        "Un classique à découvrir.",
+        "Une lecture qui vaut le détour."
+      ],
+      "coverImage": "/images/bleach---tome-1.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 20,
+      "title": "Hunter x Hunter - Tome 1",
+      "category": "Manga",
+      "numberOfPages": 192,
+      "excerpt": "/extraits/hunter-x-hunter---tome-1.pdf",
+      "summary": "Résumé de Hunter x Hunter - Tome 1. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Yoshihiro",
+      "authorLastName": "Togashi",
+      "publisher": "Kana",
+      "publicationYear": 2000,
+      "averageRating": 3.9,
+      "comments": [
+        "Le récit est vraiment prenant.",
+        "Très bon ouvrage."
+      ],
+      "coverImage": "/images/hunter-x-hunter---tome-1.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 21,
+      "title": "Astérix le Gaulois",
+      "category": "Bande dessinée",
+      "numberOfPages": 48,
+      "excerpt": "/extraits/asterix-le-gaulois.pdf",
+      "summary": "Résumé de Astérix le Gaulois. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "René",
+      "authorLastName": "Goscinny",
+      "publisher": "Hachette",
+      "publicationYear": 1961,
+      "averageRating": 4.0,
+      "comments": [
+        "J'ai beaucoup aimé les personnages.",
+        "Très agréable à lire."
+      ],
+      "coverImage": "/images/asterix-le-gaulois.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 22,
+      "title": "Tintin au Tibet",
+      "category": "Bande dessinée",
+      "numberOfPages": 62,
+      "excerpt": "/extraits/tintin-au-tibet.pdf",
+      "summary": "Résumé de Tintin au Tibet. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Georges",
+      "authorLastName": "Remi",
+      "publisher": "Casterman",
+      "publicationYear": 1960,
+      "averageRating": 4.1,
+      "comments": [
+        "Une lecture qui vaut le détour.",
+        "Une histoire intéressante."
+      ],
+      "coverImage": "/images/tintin-au-tibet.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 23,
+      "title": "Le Secret de la Licorne",
+      "category": "Bande dessinée",
+      "numberOfPages": 62,
+      "excerpt": "/extraits/le-secret-de-la-licorne.pdf",
+      "summary": "Résumé de Le Secret de la Licorne. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Georges",
+      "authorLastName": "Remi",
+      "publisher": "Casterman",
+      "publicationYear": 1943,
+      "averageRating": 4.2,
+      "comments": [
+        "Très bon ouvrage.",
+        "Je recommande ce livre."
+      ],
+      "coverImage": "/images/le-secret-de-la-licorne.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 24,
+      "title": "Les Schtroumpfs noirs",
+      "category": "Bande dessinée",
+      "numberOfPages": 48,
+      "excerpt": "/extraits/les-schtroumpfs-noirs.pdf",
+      "summary": "Résumé de Les Schtroumpfs noirs. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Peyo",
+      "authorLastName": "",
+      "publisher": "Dupuis",
+      "publicationYear": 1963,
+      "averageRating": 4.3,
+      "comments": [
+        "Très agréable à lire.",
+        "Un classique à découvrir."
+      ],
+      "coverImage": "/images/les-schtroumpfs-noirs.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 25,
+      "title": "Lucky Luke - Daisy Town",
+      "category": "Bande dessinée",
+      "numberOfPages": 48,
+      "excerpt": "/extraits/lucky-luke---daisy-town.pdf",
+      "summary": "Résumé de Lucky Luke - Daisy Town. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Morris",
+      "authorLastName": "",
+      "publisher": "Dargaud",
+      "publicationYear": 1983,
+      "averageRating": 4.4,
+      "comments": [
+        "Une histoire intéressante.",
+        "Le récit est vraiment prenant."
+      ],
+      "coverImage": "/images/lucky-luke---daisy-town.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 26,
+      "title": "Gaston - Gare aux gaffes",
+      "category": "Bande dessinée",
+      "numberOfPages": 48,
+      "excerpt": "/extraits/gaston---gare-aux-gaffes.pdf",
+      "summary": "Résumé de Gaston - Gare aux gaffes. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "André",
+      "authorLastName": "Franquin",
+      "publisher": "Dupuis",
+      "publicationYear": 1966,
+      "averageRating": 4.5,
+      "comments": [
+        "Je recommande ce livre.",
+        "J'ai beaucoup aimé les personnages."
+      ],
+      "coverImage": "/images/gaston---gare-aux-gaffes.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 27,
+      "title": "Blake et Mortimer - Le Secret de l'Espadon",
+      "category": "Bande dessinée",
+      "numberOfPages": 64,
+      "excerpt": "/extraits/blake-et-mortimer---le-secret-de-lespadon.pdf",
+      "summary": "Résumé de Blake et Mortimer - Le Secret de l'Espadon. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Edgar P.",
+      "authorLastName": "Jacobs",
+      "publisher": "Blake et Mortimer",
+      "publicationYear": 1950,
+      "averageRating": 4.6,
+      "comments": [
+        "Un classique à découvrir.",
+        "Une lecture qui vaut le détour."
+      ],
+      "coverImage": "/images/blake-et-mortimer---le-secret-de-lespadon.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 28,
+      "title": "XIII - Le Jour du soleil noir",
+      "category": "Bande dessinée",
+      "numberOfPages": 48,
+      "excerpt": "/extraits/xiii---le-jour-du-soleil-noir.pdf",
+      "summary": "Résumé de XIII - Le Jour du soleil noir. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Jean",
+      "authorLastName": "Van Hamme",
+      "publisher": "Dargaud",
+      "publicationYear": 1984,
+      "averageRating": 4.7,
+      "comments": [
+        "Le récit est vraiment prenant.",
+        "Très bon ouvrage."
+      ],
+      "coverImage": "/images/xiii---le-jour-du-soleil-noir.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 29,
+      "title": "Thorgal - La Magicienne trahie",
+      "category": "Bande dessinée",
+      "numberOfPages": 48,
+      "excerpt": "/extraits/thorgal---la-magicienne-trahie.pdf",
+      "summary": "Résumé de Thorgal - La Magicienne trahie. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Jean",
+      "authorLastName": "Van Hamme",
+      "publisher": "Le Lombard",
+      "publicationYear": 1980,
+      "averageRating": 4.8,
+      "comments": [
+        "J'ai beaucoup aimé les personnages.",
+        "Très agréable à lire."
+      ],
+      "coverImage": "/images/thorgal---la-magicienne-trahie.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 30,
+      "title": "Les Légendaires - La Pierre de Jovénia",
+      "category": "Bande dessinée",
+      "numberOfPages": 48,
+      "excerpt": "/extraits/les-legendaires---la-pierre-de-jovenia.pdf",
+      "summary": "Résumé de Les Légendaires - La Pierre de Jovénia. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Patrick",
+      "authorLastName": "Sobral",
+      "publisher": "Delcourt",
+      "publicationYear": 2004,
+      "averageRating": 4.9,
+      "comments": [
+        "Une lecture qui vaut le détour.",
+        "Une histoire intéressante."
+      ],
+      "coverImage": "/images/les-legendaires---la-pierre-de-jovenia.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 31,
+      "title": "Dune",
+      "category": "Science-fiction",
+      "numberOfPages": 704,
+      "excerpt": "/extraits/dune.pdf",
+      "summary": "Résumé de Dune. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Frank",
+      "authorLastName": "Herbert",
+      "publisher": "Robert Laffont",
+      "publicationYear": 1965,
+      "averageRating": 5.0,
+      "comments": [
+        "Très bon ouvrage.",
+        "Je recommande ce livre."
+      ],
+      "coverImage": "/images/dune.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 32,
+      "title": "Fondation",
+      "category": "Science-fiction",
+      "numberOfPages": 416,
+      "excerpt": "/extraits/fondation.pdf",
+      "summary": "Résumé de Fondation. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Isaac",
+      "authorLastName": "Asimov",
+      "publisher": "Denoël",
+      "publicationYear": 1951,
+      "averageRating": 3.5,
+      "comments": [
+        "Très agréable à lire.",
+        "Un classique à découvrir."
+      ],
+      "coverImage": "/images/fondation.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 33,
+      "title": "Fahrenheit 451",
+      "category": "Science-fiction",
+      "numberOfPages": 272,
+      "excerpt": "/extraits/fahrenheit-451.pdf",
+      "summary": "Résumé de Fahrenheit 451. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Ray",
+      "authorLastName": "Bradbury",
+      "publisher": "Gallimard",
+      "publicationYear": 1953,
+      "averageRating": 3.6,
+      "comments": [
+        "Une histoire intéressante.",
+        "Le récit est vraiment prenant."
+      ],
+      "coverImage": "/images/fahrenheit-451.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 34,
+      "title": "Le Meilleur des mondes",
+      "category": "Science-fiction",
+      "numberOfPages": 320,
+      "excerpt": "/extraits/le-meilleur-des-mondes.pdf",
+      "summary": "Résumé de Le Meilleur des mondes. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Aldous",
+      "authorLastName": "Huxley",
+      "publisher": "Pocket",
+      "publicationYear": 1932,
+      "averageRating": 3.7,
+      "comments": [
+        "Je recommande ce livre.",
+        "J'ai beaucoup aimé les personnages."
+      ],
+      "coverImage": "/images/le-meilleur-des-mondes.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 35,
+      "title": "La Guerre des mondes",
+      "category": "Science-fiction",
+      "numberOfPages": 288,
+      "excerpt": "/extraits/la-guerre-des-mondes.pdf",
+      "summary": "Résumé de La Guerre des mondes. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "H.G.",
+      "authorLastName": "Wells",
+      "publisher": "Gallimard",
+      "publicationYear": 1898,
+      "averageRating": 3.8,
+      "comments": [
+        "Un classique à découvrir.",
+        "Une lecture qui vaut le détour."
+      ],
+      "coverImage": "/images/la-guerre-des-mondes.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 36,
+      "title": "Neuromancien",
+      "category": "Science-fiction",
+      "numberOfPages": 352,
+      "excerpt": "/extraits/neuromancien.pdf",
+      "summary": "Résumé de Neuromancien. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "William",
+      "authorLastName": "Gibson",
+      "publisher": "J'ai lu",
+      "publicationYear": 1984,
+      "averageRating": 3.9,
+      "comments": [
+        "Le récit est vraiment prenant.",
+        "Très bon ouvrage."
+      ],
+      "coverImage": "/images/neuromancien.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 37,
+      "title": "Solaris",
+      "category": "Science-fiction",
+      "numberOfPages": 336,
+      "excerpt": "/extraits/solaris.pdf",
+      "summary": "Résumé de Solaris. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Stanislaw",
+      "authorLastName": "Lem",
+      "publisher": "Denoël",
+      "publicationYear": 1961,
+      "averageRating": 4.0,
+      "comments": [
+        "J'ai beaucoup aimé les personnages.",
+        "Très agréable à lire."
+      ],
+      "coverImage": "/images/solaris.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 38,
+      "title": "La Stratégie Ender",
+      "category": "Science-fiction",
+      "numberOfPages": 448,
+      "excerpt": "/extraits/la-strategie-ender.pdf",
+      "summary": "Résumé de La Stratégie Ender. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Orson Scott",
+      "authorLastName": "Card",
+      "publisher": "J'ai lu",
+      "publicationYear": 1985,
+      "averageRating": 4.1,
+      "comments": [
+        "Une lecture qui vaut le détour.",
+        "Une histoire intéressante."
+      ],
+      "coverImage": "/images/la-strategie-ender.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 39,
+      "title": "Hypérion",
+      "category": "Science-fiction",
+      "numberOfPages": 640,
+      "excerpt": "/extraits/hyperion.pdf",
+      "summary": "Résumé de Hypérion. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Dan",
+      "authorLastName": "Simmons",
+      "publisher": "Robert Laffont",
+      "publicationYear": 1989,
+      "averageRating": 4.2,
+      "comments": [
+        "Très bon ouvrage.",
+        "Je recommande ce livre."
+      ],
+      "coverImage": "/images/hyperion.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 40,
+      "title": "Le Problème à trois corps",
+      "category": "Science-fiction",
+      "numberOfPages": 480,
+      "excerpt": "/extraits/le-probleme-a-trois-corps.pdf",
+      "summary": "Résumé de Le Problème à trois corps. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Liu",
+      "authorLastName": "Cixin",
+      "publisher": "Actes Sud",
+      "publicationYear": 2008,
+      "averageRating": 4.3,
+      "comments": [
+        "Très agréable à lire.",
+        "Un classique à découvrir."
+      ],
+      "coverImage": "/images/le-probleme-a-trois-corps.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 41,
+      "title": "Le Hobbit",
+      "category": "Fantasy",
+      "numberOfPages": 320,
+      "excerpt": "/extraits/le-hobbit.pdf",
+      "summary": "Résumé de Le Hobbit. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "J.R.R.",
+      "authorLastName": "Tolkien",
+      "publisher": "Christian Bourgois",
+      "publicationYear": 1937,
+      "averageRating": 4.4,
+      "comments": [
+        "Une histoire intéressante.",
+        "Le récit est vraiment prenant."
+      ],
+      "coverImage": "/images/le-hobbit.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 42,
+      "title": "Le Trône de fer",
+      "category": "Fantasy",
+      "numberOfPages": 800,
+      "excerpt": "/extraits/le-trone-de-fer.pdf",
+      "summary": "Résumé de Le Trône de fer. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "George R.R.",
+      "authorLastName": "Martin",
+      "publisher": "Pygmalion",
+      "publicationYear": 1996,
+      "averageRating": 4.5,
+      "comments": [
+        "Je recommande ce livre.",
+        "J'ai beaucoup aimé les personnages."
+      ],
+      "coverImage": "/images/le-trone-de-fer.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 43,
+      "title": "L'Assassin royal",
+      "category": "Fantasy",
+      "numberOfPages": 416,
+      "excerpt": "/extraits/lassassin-royal.pdf",
+      "summary": "Résumé de L'Assassin royal. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Robin",
+      "authorLastName": "Hobb",
+      "publisher": "Pygmalion",
+      "publicationYear": 1995,
+      "averageRating": 4.6,
+      "comments": [
+        "Un classique à découvrir.",
+        "Une lecture qui vaut le détour."
+      ],
+      "coverImage": "/images/lassassin-royal.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 44,
+      "title": "La Horde du Contrevent",
+      "category": "Fantasy",
+      "numberOfPages": 736,
+      "excerpt": "/extraits/la-horde-du-contrevent.pdf",
+      "summary": "Résumé de La Horde du Contrevent. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Alain",
+      "authorLastName": "Damasio",
+      "publisher": "La Volte",
+      "publicationYear": 2004,
+      "averageRating": 4.7,
+      "comments": [
+        "Le récit est vraiment prenant.",
+        "Très bon ouvrage."
+      ],
+      "coverImage": "/images/la-horde-du-contrevent.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 45,
+      "title": "Eragon",
+      "category": "Fantasy",
+      "numberOfPages": 704,
+      "excerpt": "/extraits/eragon.pdf",
+      "summary": "Résumé de Eragon. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Christopher",
+      "authorLastName": "Paolini",
+      "publisher": "Bayard",
+      "publicationYear": 2003,
+      "averageRating": 4.8,
+      "comments": [
+        "J'ai beaucoup aimé les personnages.",
+        "Très agréable à lire."
+      ],
+      "coverImage": "/images/eragon.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 46,
+      "title": "La Quête d'Ewilan",
+      "category": "Fantasy",
+      "numberOfPages": 288,
+      "excerpt": "/extraits/la-quete-dewilan.pdf",
+      "summary": "Résumé de La Quête d'Ewilan. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Pierre",
+      "authorLastName": "Bottero",
+      "publisher": "Rageot",
+      "publicationYear": 2003,
+      "averageRating": 4.9,
+      "comments": [
+        "Une lecture qui vaut le détour.",
+        "Une histoire intéressante."
+      ],
+      "coverImage": "/images/la-quete-dewilan.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 47,
+      "title": "Le Nom du vent",
+      "category": "Fantasy",
+      "numberOfPages": 800,
+      "excerpt": "/extraits/le-nom-du-vent.pdf",
+      "summary": "Résumé de Le Nom du vent. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Patrick",
+      "authorLastName": "Rothfuss",
+      "publisher": "Bragelonne",
+      "publicationYear": 2007,
+      "averageRating": 5.0,
+      "comments": [
+        "Très bon ouvrage.",
+        "Je recommande ce livre."
+      ],
+      "coverImage": "/images/le-nom-du-vent.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 48,
+      "title": "Le Sorceleur - Le Dernier Vœu",
+      "category": "Fantasy",
+      "numberOfPages": 352,
+      "excerpt": "/extraits/le-sorceleur---le-dernier-vœu.pdf",
+      "summary": "Résumé de Le Sorceleur - Le Dernier Vœu. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Andrzej",
+      "authorLastName": "Sapkowski",
+      "publisher": "Bragelonne",
+      "publicationYear": 1993,
+      "averageRating": 3.5,
+      "comments": [
+        "Très agréable à lire.",
+        "Un classique à découvrir."
+      ],
+      "coverImage": "/images/le-sorceleur---le-dernier-vœu.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 49,
+      "title": "L'Épée de vérité",
+      "category": "Fantasy",
+      "numberOfPages": 672,
+      "excerpt": "/extraits/lepee-de-verite.pdf",
+      "summary": "Résumé de L'Épée de vérité. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Terry",
+      "authorLastName": "Goodkind",
+      "publisher": "Bragelonne",
+      "publicationYear": 1994,
+      "averageRating": 3.6,
+      "comments": [
+        "Une histoire intéressante.",
+        "Le récit est vraiment prenant."
+      ],
+      "coverImage": "/images/lepee-de-verite.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 50,
+      "title": "Mistborn - L'Empire ultime",
+      "category": "Fantasy",
+      "numberOfPages": 704,
+      "excerpt": "/extraits/mistborn---lempire-ultime.pdf",
+      "summary": "Résumé de Mistborn - L'Empire ultime. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Brandon",
+      "authorLastName": "Sanderson",
+      "publisher": "Orbit",
+      "publicationYear": 2006,
+      "averageRating": 3.7,
+      "comments": [
+        "Je recommande ce livre.",
+        "J'ai beaucoup aimé les personnages."
+      ],
+      "coverImage": "/images/mistborn---lempire-ultime.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 51,
+      "title": "Le Comte de Monte-Cristo",
+      "category": "Roman",
+      "numberOfPages": 1312,
+      "excerpt": "/extraits/le-comte-de-monte-cristo.pdf",
+      "summary": "Résumé de Le Comte de Monte-Cristo. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Alexandre",
+      "authorLastName": "Dumas",
+      "publisher": "Le Livre de Poche",
+      "publicationYear": 1844,
+      "averageRating": 3.8,
+      "comments": [
+        "Un classique à découvrir.",
+        "Une lecture qui vaut le détour."
+      ],
+      "coverImage": "/images/le-comte-de-monte-cristo.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 52,
+      "title": "Les Trois Mousquetaires",
+      "category": "Roman",
+      "numberOfPages": 832,
+      "excerpt": "/extraits/les-trois-mousquetaires.pdf",
+      "summary": "Résumé de Les Trois Mousquetaires. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Alexandre",
+      "authorLastName": "Dumas",
+      "publisher": "Gallimard",
+      "publicationYear": 1844,
+      "averageRating": 3.9,
+      "comments": [
+        "Le récit est vraiment prenant.",
+        "Très bon ouvrage."
+      ],
+      "coverImage": "/images/les-trois-mousquetaires.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 53,
+      "title": "Bel-Ami",
+      "category": "Roman",
+      "numberOfPages": 416,
+      "excerpt": "/extraits/bel-ami.pdf",
+      "summary": "Résumé de Bel-Ami. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Guy",
+      "authorLastName": "de Maupassant",
+      "publisher": "Le Livre de Poche",
+      "publicationYear": 1885,
+      "averageRating": 4.0,
+      "comments": [
+        "J'ai beaucoup aimé les personnages.",
+        "Très agréable à lire."
+      ],
+      "coverImage": "/images/bel-ami.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 54,
+      "title": "Le Rouge et le Noir",
+      "category": "Roman",
+      "numberOfPages": 704,
+      "excerpt": "/extraits/le-rouge-et-le-noir.pdf",
+      "summary": "Résumé de Le Rouge et le Noir. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Stendhal",
+      "authorLastName": "",
+      "publisher": "Gallimard",
+      "publicationYear": 1830,
+      "averageRating": 4.1,
+      "comments": [
+        "Une lecture qui vaut le détour.",
+        "Une histoire intéressante."
+      ],
+      "coverImage": "/images/le-rouge-et-le-noir.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 55,
+      "title": "La Peste",
+      "category": "Roman",
+      "numberOfPages": 336,
+      "excerpt": "/extraits/la-peste.pdf",
+      "summary": "Résumé de La Peste. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Albert",
+      "authorLastName": "Camus",
+      "publisher": "Gallimard",
+      "publicationYear": 1947,
+      "averageRating": 4.2,
+      "comments": [
+        "Très bon ouvrage.",
+        "Je recommande ce livre."
+      ],
+      "coverImage": "/images/la-peste.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 56,
+      "title": "Au Bonheur des Dames",
+      "category": "Roman",
+      "numberOfPages": 576,
+      "excerpt": "/extraits/au-bonheur-des-dames.pdf",
+      "summary": "Résumé de Au Bonheur des Dames. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Émile",
+      "authorLastName": "Zola",
+      "publisher": "Gallimard",
+      "publicationYear": 1883,
+      "averageRating": 4.3,
+      "comments": [
+        "Très agréable à lire.",
+        "Un classique à découvrir."
+      ],
+      "coverImage": "/images/au-bonheur-des-dames.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 57,
+      "title": "Le Père Goriot",
+      "category": "Roman",
+      "numberOfPages": 352,
+      "excerpt": "/extraits/le-pere-goriot.pdf",
+      "summary": "Résumé de Le Père Goriot. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Honoré",
+      "authorLastName": "de Balzac",
+      "publisher": "Gallimard",
+      "publicationYear": 1835,
+      "averageRating": 4.4,
+      "comments": [
+        "Une histoire intéressante.",
+        "Le récit est vraiment prenant."
+      ],
+      "coverImage": "/images/le-pere-goriot.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 58,
+      "title": "La Condition humaine",
+      "category": "Roman",
+      "numberOfPages": 352,
+      "excerpt": "/extraits/la-condition-humaine.pdf",
+      "summary": "Résumé de La Condition humaine. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "André",
+      "authorLastName": "Malraux",
+      "publisher": "Gallimard",
+      "publicationYear": 1933,
+      "averageRating": 4.5,
+      "comments": [
+        "Je recommande ce livre.",
+        "J'ai beaucoup aimé les personnages."
+      ],
+      "coverImage": "/images/la-condition-humaine.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 59,
+      "title": "Voyage au centre de la Terre",
+      "category": "Aventure",
+      "numberOfPages": 320,
+      "excerpt": "/extraits/voyage-au-centre-de-la-terre.pdf",
+      "summary": "Résumé de Voyage au centre de la Terre. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Jules",
+      "authorLastName": "Verne",
+      "publisher": "Hetzel",
+      "publicationYear": 1864,
+      "averageRating": 4.6,
+      "comments": [
+        "Un classique à découvrir.",
+        "Une lecture qui vaut le détour."
+      ],
+      "coverImage": "/images/voyage-au-centre-de-la-terre.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 60,
+      "title": "Vingt mille lieues sous les mers",
+      "category": "Aventure",
+      "numberOfPages": 544,
+      "excerpt": "/extraits/vingt-mille-lieues-sous-les-mers.pdf",
+      "summary": "Résumé de Vingt mille lieues sous les mers. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Jules",
+      "authorLastName": "Verne",
+      "publisher": "Hetzel",
+      "publicationYear": 1870,
+      "averageRating": 4.7,
+      "comments": [
+        "Le récit est vraiment prenant.",
+        "Très bon ouvrage."
+      ],
+      "coverImage": "/images/vingt-mille-lieues-sous-les-mers.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 61,
+      "title": "L'Île mystérieuse",
+      "category": "Aventure",
+      "numberOfPages": 672,
+      "excerpt": "/extraits/lîle-mysterieuse.pdf",
+      "summary": "Résumé de L'Île mystérieuse. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Jules",
+      "authorLastName": "Verne",
+      "publisher": "Hetzel",
+      "publicationYear": 1874,
+      "averageRating": 4.8,
+      "comments": [
+        "J'ai beaucoup aimé les personnages.",
+        "Très agréable à lire."
+      ],
+      "coverImage": "/images/lîle-mysterieuse.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 62,
+      "title": "Robinson Crusoé",
+      "category": "Aventure",
+      "numberOfPages": 416,
+      "excerpt": "/extraits/robinson-crusoe.pdf",
+      "summary": "Résumé de Robinson Crusoé. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Daniel",
+      "authorLastName": "Defoe",
+      "publisher": "Gallimard",
+      "publicationYear": 1719,
+      "averageRating": 4.9,
+      "comments": [
+        "Une lecture qui vaut le détour.",
+        "Une histoire intéressante."
+      ],
+      "coverImage": "/images/robinson-crusoe.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 63,
+      "title": "L'Île au trésor",
+      "category": "Aventure",
+      "numberOfPages": 288,
+      "excerpt": "/extraits/lîle-au-tresor.pdf",
+      "summary": "Résumé de L'Île au trésor. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Robert Louis",
+      "authorLastName": "Stevenson",
+      "publisher": "Gallimard",
+      "publicationYear": 1883,
+      "averageRating": 5.0,
+      "comments": [
+        "Très bon ouvrage.",
+        "Je recommande ce livre."
+      ],
+      "coverImage": "/images/lîle-au-tresor.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 64,
+      "title": "Moby Dick",
+      "category": "Aventure",
+      "numberOfPages": 720,
+      "excerpt": "/extraits/moby-dick.pdf",
+      "summary": "Résumé de Moby Dick. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Herman",
+      "authorLastName": "Melville",
+      "publisher": "Gallimard",
+      "publicationYear": 1851,
+      "averageRating": 3.5,
+      "comments": [
+        "Très agréable à lire.",
+        "Un classique à découvrir."
+      ],
+      "coverImage": "/images/moby-dick.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 65,
+      "title": "Le Tour du monde en quatre-vingts jours",
+      "category": "Aventure",
+      "numberOfPages": 320,
+      "excerpt": "/extraits/le-tour-du-monde-en-quatre-vingts-jours.pdf",
+      "summary": "Résumé de Le Tour du monde en quatre-vingts jours. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Jules",
+      "authorLastName": "Verne",
+      "publisher": "Hetzel",
+      "publicationYear": 1872,
+      "averageRating": 3.6,
+      "comments": [
+        "Une histoire intéressante.",
+        "Le récit est vraiment prenant."
+      ],
+      "coverImage": "/images/le-tour-du-monde-en-quatre-vingts-jours.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 66,
+      "title": "Croc-Blanc",
+      "category": "Aventure",
+      "numberOfPages": 304,
+      "excerpt": "/extraits/croc-blanc.pdf",
+      "summary": "Résumé de Croc-Blanc. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Jack",
+      "authorLastName": "London",
+      "publisher": "Gallimard",
+      "publicationYear": 1906,
+      "averageRating": 3.7,
+      "comments": [
+        "Je recommande ce livre.",
+        "J'ai beaucoup aimé les personnages."
+      ],
+      "coverImage": "/images/croc-blanc.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 67,
+      "title": "L'Appel de la forêt",
+      "category": "Aventure",
+      "numberOfPages": 160,
+      "excerpt": "/extraits/lappel-de-la-foret.pdf",
+      "summary": "Résumé de L'Appel de la forêt. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Jack",
+      "authorLastName": "London",
+      "publisher": "Gallimard",
+      "publicationYear": 1903,
+      "averageRating": 3.8,
+      "comments": [
+        "Un classique à découvrir.",
+        "Une lecture qui vaut le détour."
+      ],
+      "coverImage": "/images/lappel-de-la-foret.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 68,
+      "title": "Les Aventures de Tom Sawyer",
+      "category": "Aventure",
+      "numberOfPages": 288,
+      "excerpt": "/extraits/les-aventures-de-tom-sawyer.pdf",
+      "summary": "Résumé de Les Aventures de Tom Sawyer. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Mark",
+      "authorLastName": "Twain",
+      "publisher": "Gallimard",
+      "publicationYear": 1876,
+      "averageRating": 3.9,
+      "comments": [
+        "Le récit est vraiment prenant.",
+        "Très bon ouvrage."
+      ],
+      "coverImage": "/images/les-aventures-de-tom-sawyer.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 69,
+      "title": "Sherlock Holmes - Une étude en rouge",
+      "category": "Policier",
+      "numberOfPages": 224,
+      "excerpt": "/extraits/sherlock-holmes---une-etude-en-rouge.pdf",
+      "summary": "Résumé de Sherlock Holmes - Une étude en rouge. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Arthur Conan",
+      "authorLastName": "Doyle",
+      "publisher": "Le Livre de Poche",
+      "publicationYear": 1887,
+      "averageRating": 4.0,
+      "comments": [
+        "J'ai beaucoup aimé les personnages.",
+        "Très agréable à lire."
+      ],
+      "coverImage": "/images/sherlock-holmes---une-etude-en-rouge.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 70,
+      "title": "Le Crime de l'Orient-Express",
+      "category": "Policier",
+      "numberOfPages": 256,
+      "excerpt": "/extraits/le-crime-de-lorient-express.pdf",
+      "summary": "Résumé de Le Crime de l'Orient-Express. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Agatha",
+      "authorLastName": "Christie",
+      "publisher": "Le Livre de Poche",
+      "publicationYear": 1934,
+      "averageRating": 4.1,
+      "comments": [
+        "Une lecture qui vaut le détour.",
+        "Une histoire intéressante."
+      ],
+      "coverImage": "/images/le-crime-de-lorient-express.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 71,
+      "title": "Dix petits nègres",
+      "category": "Policier",
+      "numberOfPages": 288,
+      "excerpt": "/extraits/dix-petits-negres.pdf",
+      "summary": "Résumé de Dix petits nègres. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Agatha",
+      "authorLastName": "Christie",
+      "publisher": "Le Livre de Poche",
+      "publicationYear": 1939,
+      "averageRating": 4.2,
+      "comments": [
+        "Très bon ouvrage.",
+        "Je recommande ce livre."
+      ],
+      "coverImage": "/images/dix-petits-negres.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 72,
+      "title": "Le Chien des Baskerville",
+      "category": "Policier",
+      "numberOfPages": 256,
+      "excerpt": "/extraits/le-chien-des-baskerville.pdf",
+      "summary": "Résumé de Le Chien des Baskerville. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Arthur Conan",
+      "authorLastName": "Doyle",
+      "publisher": "Le Livre de Poche",
+      "publicationYear": 1902,
+      "averageRating": 4.3,
+      "comments": [
+        "Très agréable à lire.",
+        "Un classique à découvrir."
+      ],
+      "coverImage": "/images/le-chien-des-baskerville.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 73,
+      "title": "Millénium - Les hommes qui n'aimaient pas les femmes",
+      "category": "Policier",
+      "numberOfPages": 704,
+      "excerpt": "/extraits/millenium---les-hommes-qui-naimaient-pas-les-femmes.pdf",
+      "summary": "Résumé de Millénium - Les hommes qui n'aimaient pas les femmes. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Stieg",
+      "authorLastName": "Larsson",
+      "publisher": "Actes Sud",
+      "publicationYear": 2005,
+      "averageRating": 4.4,
+      "comments": [
+        "Une histoire intéressante.",
+        "Le récit est vraiment prenant."
+      ],
+      "coverImage": "/images/millenium---les-hommes-qui-naimaient-pas-les-femmes.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 74,
+      "title": "Da Vinci Code",
+      "category": "Thriller",
+      "numberOfPages": 576,
+      "excerpt": "/extraits/da-vinci-code.pdf",
+      "summary": "Résumé de Da Vinci Code. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Dan",
+      "authorLastName": "Brown",
+      "publisher": "JC Lattès",
+      "publicationYear": 2003,
+      "averageRating": 4.5,
+      "comments": [
+        "Je recommande ce livre.",
+        "J'ai beaucoup aimé les personnages."
+      ],
+      "coverImage": "/images/da-vinci-code.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 75,
+      "title": "Shutter Island",
+      "category": "Thriller",
+      "numberOfPages": 400,
+      "excerpt": "/extraits/shutter-island.pdf",
+      "summary": "Résumé de Shutter Island. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Dennis",
+      "authorLastName": "Lehane",
+      "publisher": "Rivages",
+      "publicationYear": 2003,
+      "averageRating": 4.6,
+      "comments": [
+        "Un classique à découvrir.",
+        "Une lecture qui vaut le détour."
+      ],
+      "coverImage": "/images/shutter-island.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 76,
+      "title": "Gone Girl",
+      "category": "Thriller",
+      "numberOfPages": 576,
+      "excerpt": "/extraits/gone-girl.pdf",
+      "summary": "Résumé de Gone Girl. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Gillian",
+      "authorLastName": "Flynn",
+      "publisher": "Sonatine",
+      "publicationYear": 2012,
+      "averageRating": 4.7,
+      "comments": [
+        "Le récit est vraiment prenant.",
+        "Très bon ouvrage."
+      ],
+      "coverImage": "/images/gone-girl.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 77,
+      "title": "La Fille du train",
+      "category": "Thriller",
+      "numberOfPages": 416,
+      "excerpt": "/extraits/la-fille-du-train.pdf",
+      "summary": "Résumé de La Fille du train. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Paula",
+      "authorLastName": "Hawkins",
+      "publisher": "Sonatine",
+      "publicationYear": 2015,
+      "averageRating": 4.8,
+      "comments": [
+        "J'ai beaucoup aimé les personnages.",
+        "Très agréable à lire."
+      ],
+      "coverImage": "/images/la-fille-du-train.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 78,
+      "title": "Misery",
+      "category": "Horreur",
+      "numberOfPages": 416,
+      "excerpt": "/extraits/misery.pdf",
+      "summary": "Résumé de Misery. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Stephen",
+      "authorLastName": "King",
+      "publisher": "Albin Michel",
+      "publicationYear": 1987,
+      "averageRating": 4.9,
+      "comments": [
+        "Une lecture qui vaut le détour.",
+        "Une histoire intéressante."
+      ],
+      "coverImage": "/images/misery.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 79,
+      "title": "Ça",
+      "category": "Horreur",
+      "numberOfPages": 1248,
+      "excerpt": "/extraits/ca.pdf",
+      "summary": "Résumé de Ça. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Stephen",
+      "authorLastName": "King",
+      "publisher": "Albin Michel",
+      "publicationYear": 1986,
+      "averageRating": 5.0,
+      "comments": [
+        "Très bon ouvrage.",
+        "Je recommande ce livre."
+      ],
+      "coverImage": "/images/ca.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 80,
+      "title": "Shining",
+      "category": "Horreur",
+      "numberOfPages": 576,
+      "excerpt": "/extraits/shining.pdf",
+      "summary": "Résumé de Shining. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Stephen",
+      "authorLastName": "King",
+      "publisher": "JC Lattès",
+      "publicationYear": 1977,
+      "averageRating": 3.5,
+      "comments": [
+        "Très agréable à lire.",
+        "Un classique à découvrir."
+      ],
+      "coverImage": "/images/shining.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 81,
+      "title": "Dracula",
+      "category": "Horreur",
+      "numberOfPages": 576,
+      "excerpt": "/extraits/dracula.pdf",
+      "summary": "Résumé de Dracula. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Bram",
+      "authorLastName": "Stoker",
+      "publisher": "Gallimard",
+      "publicationYear": 1897,
+      "averageRating": 3.6,
+      "comments": [
+        "Une histoire intéressante.",
+        "Le récit est vraiment prenant."
+      ],
+      "coverImage": "/images/dracula.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 82,
+      "title": "Frankenstein",
+      "category": "Horreur",
+      "numberOfPages": 336,
+      "excerpt": "/extraits/frankenstein.pdf",
+      "summary": "Résumé de Frankenstein. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Mary",
+      "authorLastName": "Shelley",
+      "publisher": "Gallimard",
+      "publicationYear": 1818,
+      "averageRating": 3.7,
+      "comments": [
+        "Je recommande ce livre.",
+        "J'ai beaucoup aimé les personnages."
+      ],
+      "coverImage": "/images/frankenstein.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 83,
+      "title": "L'Alchimiste",
+      "category": "Roman",
+      "numberOfPages": 192,
+      "excerpt": "/extraits/lalchimiste.pdf",
+      "summary": "Résumé de L'Alchimiste. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Paulo",
+      "authorLastName": "Coelho",
+      "publisher": "Anne Carrière",
+      "publicationYear": 1988,
+      "averageRating": 3.8,
+      "comments": [
+        "Un classique à découvrir.",
+        "Une lecture qui vaut le détour."
+      ],
+      "coverImage": "/images/lalchimiste.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 84,
+      "title": "Le Vieil Homme et la Mer",
+      "category": "Roman",
+      "numberOfPages": 160,
+      "excerpt": "/extraits/le-vieil-homme-et-la-mer.pdf",
+      "summary": "Résumé de Le Vieil Homme et la Mer. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Ernest",
+      "authorLastName": "Hemingway",
+      "publisher": "Gallimard",
+      "publicationYear": 1952,
+      "averageRating": 3.9,
+      "comments": [
+        "Le récit est vraiment prenant.",
+        "Très bon ouvrage."
+      ],
+      "coverImage": "/images/le-vieil-homme-et-la-mer.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 85,
+      "title": "Des souris et des hommes",
+      "category": "Roman",
+      "numberOfPages": 192,
+      "excerpt": "/extraits/des-souris-et-des-hommes.pdf",
+      "summary": "Résumé de Des souris et des hommes. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "John",
+      "authorLastName": "Steinbeck",
+      "publisher": "Gallimard",
+      "publicationYear": 1937,
+      "averageRating": 4.0,
+      "comments": [
+        "J'ai beaucoup aimé les personnages.",
+        "Très agréable à lire."
+      ],
+      "coverImage": "/images/des-souris-et-des-hommes.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 86,
+      "title": "Orgueil et Préjugés",
+      "category": "Roman",
+      "numberOfPages": 480,
+      "excerpt": "/extraits/orgueil-et-prejuges.pdf",
+      "summary": "Résumé de Orgueil et Préjugés. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Jane",
+      "authorLastName": "Austen",
+      "publisher": "Gallimard",
+      "publicationYear": 1813,
+      "averageRating": 4.1,
+      "comments": [
+        "Une lecture qui vaut le détour.",
+        "Une histoire intéressante."
+      ],
+      "coverImage": "/images/orgueil-et-prejuges.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 87,
+      "title": "Jane Eyre",
+      "category": "Roman",
+      "numberOfPages": 704,
+      "excerpt": "/extraits/jane-eyre.pdf",
+      "summary": "Résumé de Jane Eyre. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Charlotte",
+      "authorLastName": "Brontë",
+      "publisher": "Gallimard",
+      "publicationYear": 1847,
+      "averageRating": 4.2,
+      "comments": [
+        "Très bon ouvrage.",
+        "Je recommande ce livre."
+      ],
+      "coverImage": "/images/jane-eyre.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 88,
+      "title": "Les Hauts de Hurlevent",
+      "category": "Roman",
+      "numberOfPages": 480,
+      "excerpt": "/extraits/les-hauts-de-hurlevent.pdf",
+      "summary": "Résumé de Les Hauts de Hurlevent. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Emily",
+      "authorLastName": "Brontë",
+      "publisher": "Gallimard",
+      "publicationYear": 1847,
+      "averageRating": 4.3,
+      "comments": [
+        "Très agréable à lire.",
+        "Un classique à découvrir."
+      ],
+      "coverImage": "/images/les-hauts-de-hurlevent.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 89,
+      "title": "Le Parfum",
+      "category": "Roman",
+      "numberOfPages": 320,
+      "excerpt": "/extraits/le-parfum.pdf",
+      "summary": "Résumé de Le Parfum. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Patrick",
+      "authorLastName": "Süskind",
+      "publisher": "Fayard",
+      "publicationYear": 1985,
+      "averageRating": 4.4,
+      "comments": [
+        "Une histoire intéressante.",
+        "Le récit est vraiment prenant."
+      ],
+      "coverImage": "/images/le-parfum.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 90,
+      "title": "La Ferme des animaux",
+      "category": "Roman",
+      "numberOfPages": 160,
+      "excerpt": "/extraits/la-ferme-des-animaux.pdf",
+      "summary": "Résumé de La Ferme des animaux. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "George",
+      "authorLastName": "Orwell",
+      "publisher": "Gallimard",
+      "publicationYear": 1945,
+      "averageRating": 4.5,
+      "comments": [
+        "Je recommande ce livre.",
+        "J'ai beaucoup aimé les personnages."
+      ],
+      "coverImage": "/images/la-ferme-des-animaux.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 91,
+      "title": "Sapiens",
+      "category": "Essai",
+      "numberOfPages": 544,
+      "excerpt": "/extraits/sapiens.pdf",
+      "summary": "Résumé de Sapiens. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Yuval Noah",
+      "authorLastName": "Harari",
+      "publisher": "Albin Michel",
+      "publicationYear": 2011,
+      "averageRating": 4.6,
+      "comments": [
+        "Un classique à découvrir.",
+        "Une lecture qui vaut le détour."
+      ],
+      "coverImage": "/images/sapiens.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 92,
+      "title": "Homo Deus",
+      "category": "Essai",
+      "numberOfPages": 496,
+      "excerpt": "/extraits/homo-deus.pdf",
+      "summary": "Résumé de Homo Deus. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Yuval Noah",
+      "authorLastName": "Harari",
+      "publisher": "Albin Michel",
+      "publicationYear": 2015,
+      "averageRating": 4.7,
+      "comments": [
+        "Le récit est vraiment prenant.",
+        "Très bon ouvrage."
+      ],
+      "coverImage": "/images/homo-deus.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 93,
+      "title": "L'Art de la guerre",
+      "category": "Essai",
+      "numberOfPages": 160,
+      "excerpt": "/extraits/lart-de-la-guerre.pdf",
+      "summary": "Résumé de L'Art de la guerre. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Sun",
+      "authorLastName": "Tzu",
+      "publisher": "Flammarion",
+      "publicationYear": -500,
+      "averageRating": 4.8,
+      "comments": [
+        "J'ai beaucoup aimé les personnages.",
+        "Très agréable à lire."
+      ],
+      "coverImage": "/images/lart-de-la-guerre.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 94,
+      "title": "Méditations",
+      "category": "Philosophie",
+      "numberOfPages": 256,
+      "excerpt": "/extraits/meditations.pdf",
+      "summary": "Résumé de Méditations. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Marc",
+      "authorLastName": "Aurèle",
+      "publisher": "Flammarion",
+      "publicationYear": 180,
+      "averageRating": 4.9,
+      "comments": [
+        "Une lecture qui vaut le détour.",
+        "Une histoire intéressante."
+      ],
+      "coverImage": "/images/meditations.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 95,
+      "title": "Le Mythe de Sisyphe",
+      "category": "Philosophie",
+      "numberOfPages": 192,
+      "excerpt": "/extraits/le-mythe-de-sisyphe.pdf",
+      "summary": "Résumé de Le Mythe de Sisyphe. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Albert",
+      "authorLastName": "Camus",
+      "publisher": "Gallimard",
+      "publicationYear": 1942,
+      "averageRating": 5.0,
+      "comments": [
+        "Très bon ouvrage.",
+        "Je recommande ce livre."
+      ],
+      "coverImage": "/images/le-mythe-de-sisyphe.jpg",
+      "postedBy": "Nina"
+    },
+    {
+      "id": 96,
+      "title": "Ainsi parlait Zarathoustra",
+      "category": "Philosophie",
+      "numberOfPages": 416,
+      "excerpt": "/extraits/ainsi-parlait-zarathoustra.pdf",
+      "summary": "Résumé de Ainsi parlait Zarathoustra. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Friedrich",
+      "authorLastName": "Nietzsche",
+      "publisher": "Gallimard",
+      "publicationYear": 1883,
+      "averageRating": 3.5,
+      "comments": [
+        "Très agréable à lire.",
+        "Un classique à découvrir."
+      ],
+      "coverImage": "/images/ainsi-parlait-zarathoustra.jpg",
+      "postedBy": "Jeremy"
+    },
+    {
+      "id": 97,
+      "title": "Le Banquet",
+      "category": "Philosophie",
+      "numberOfPages": 224,
+      "excerpt": "/extraits/le-banquet.pdf",
+      "summary": "Résumé de Le Banquet. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Platon",
+      "authorLastName": "",
+      "publisher": "Flammarion",
+      "publicationYear": -380,
+      "averageRating": 3.6,
+      "comments": [
+        "Une histoire intéressante.",
+        "Le récit est vraiment prenant."
+      ],
+      "coverImage": "/images/le-banquet.jpg",
+      "postedBy": "Rayan"
+    },
+    {
+      "id": 98,
+      "title": "Discours de la méthode",
+      "category": "Philosophie",
+      "numberOfPages": 192,
+      "excerpt": "/extraits/discours-de-la-methode.pdf",
+      "summary": "Résumé de Discours de la méthode. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "René",
+      "authorLastName": "Descartes",
+      "publisher": "Flammarion",
+      "publicationYear": 1637,
+      "averageRating": 3.7,
+      "comments": [
+        "Je recommande ce livre.",
+        "J'ai beaucoup aimé les personnages."
+      ],
+      "coverImage": "/images/discours-de-la-methode.jpg",
+      "postedBy": "Yassine"
+    },
+    {
+      "id": 99,
+      "title": "Les Fleurs du mal",
+      "category": "Poésie",
+      "numberOfPages": 352,
+      "excerpt": "/extraits/les-fleurs-du-mal.pdf",
+      "summary": "Résumé de Les Fleurs du mal. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Charles",
+      "authorLastName": "Baudelaire",
+      "publisher": "Gallimard",
+      "publicationYear": 1857,
+      "averageRating": 3.8,
+      "comments": [
+        "Un classique à découvrir.",
+        "Une lecture qui vaut le détour."
+      ],
+      "coverImage": "/images/les-fleurs-du-mal.jpg",
+      "postedBy": "Alex"
+    },
+    {
+      "id": 100,
+      "title": "Alcools",
+      "category": "Poésie",
+      "numberOfPages": 192,
+      "excerpt": "/extraits/alcools.pdf",
+      "summary": "Résumé de Alcools. Ce texte peut être remplacé par un résumé plus détaillé dans l'application.",
+      "authorFirstName": "Guillaume",
+      "authorLastName": "Apollinaire",
+      "publisher": "Gallimard",
+      "publicationYear": 1913,
+      "averageRating": 3.9,
+      "comments": [
+        "Le récit est vraiment prenant.",
+        "Très bon ouvrage."
+      ],
+      "coverImage": "/images/alcools.jpg",
+      "postedBy": "Nina"
     }
   ]
 }

@@ -11,10 +11,10 @@ const apiClient = axios.create({
 
 // Utilisation de la syntaxe "const nomFonction = (params) => { ... }"
 export const getBooks = () => {
-  return apiClient.get('/booksBackend')
+  return apiClient.get('/books')
 }
 
 export const getBook = (id) => {
   // Correction : My JSON Server utilise le pluriel même pour un seul item
-  return apiClient.get(`/booksBackend/${id}`)
+  return apiClient.get(`/books/${id}`)
 }

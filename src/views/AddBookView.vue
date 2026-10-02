@@ -1,53 +1,114 @@
-<script setup>
-import { getBooks } from '@/services/BookService'
-import { onMounted, ref } from 'vue'
+<!-- Page visuelle autonome : aucun script, import, routeur ni CSS externe. -->
+ <script>
+import { ref} from 'vue';
 
-const books = ref({})
-
-onMounted(async () => {
-  try {
-    const response = await getBooks()
-    books.value = response.data
-  } finally {
-  }
-})
 </script>
-
 <template>
   <div class="page">
     <header class="entete">
-      <RouterLink class="logo" :to="{ name: 'home' }">Passion lecture</RouterLink>
+      <button type="button" class="lien-visuel logo">Passion lecture</button>
       <nav aria-label="Navigation principale">
-        <RouterLink :to="{ name: 'home' }">Accueil</RouterLink>
-        <RouterLink :to="{ name: 'books' }">Catalogue</RouterLink>
+        <button type="button" class="lien-visuel">Accueil</button>
+        <button type="button" class="lien-visuel">Catalogue</button>
+        <button type="button" class="lien-visuel">Ajouter un livre</button>
+        <button type="button" class="lien-visuel">Mon profil</button>
+        <button type="button" class="bouton secondaire">Déconnexion</button>
       </nav>
     </header>
-    <section class="contenu" aria-labelledby="catalogue-titre">
-      <h1 id="catalogue-titre">Catalogue des ouvrages</h1>
-      <RouterLink class="lien" :to="{ name: 'home' }">Homepage</RouterLink>
-      <!-- Filtres visuels uniquement : aucune fonction n’a été ajoutée. -->
-      <div class="actions" aria-label="Catégories">
-        <button class="bouton" type="button">Tous</button>
-        <button class="bouton secondaire" type="button">Roman</button>
-        <button class="bouton secondaire" type="button">Bande dessinée</button>
-        <button class="bouton secondaire" type="button">Manga</button>
-        <button class="bouton secondaire" type="button">Livre</button>
-      </div>
-      <!-- Ta boucle et ton lien dynamique sont conservés. -->
-      <ul class="liste-livres">
-        <li class="ligne-api" v-for="book in books" :key="book.id">
-          <h2 class="titre-livre">{{ book.title }}</h2>
-          <RouterLink
-            class="bouton secondaire"
-            :to="{ name: 'book-detail', params: { id: book.id } }"
-            >Voir les détails du livre</RouterLink
-          >
-        </li>
-      </ul>
+
+    <section class="contenu">
+      <h1>Ajouter un ouvrage</h1>
+      <p>Renseigne les informations du livre. Tous les champs sont requis.</p>
+      <form class="formulaire">
+        <div class="grille-formulaire">
+          <div class="champ">
+            <label for="titre">Titre</label>
+            <input id="titre" name="titre" type="text" value="" placeholder="Saisir…" required />
+          </div>
+          <div class="champ">
+            <label for="categorie">Catégorie</label
+            ><select id="categorie" name="categorie" required>
+              <option value="">Choisir une catégorie</option>
+              <option>Roman</option>
+              <option>Bande dessinée</option>
+              <option>Manga</option>
+              <option>Livre</option>
+            </select>
+          </div>
+          <div class="champ">
+            <label for="prenom">Prénom de l’auteur</label>
+            <input id="prenom" name="prenom" type="text" value="" placeholder="Saisir…" required />
+          </div>
+          <div class="champ">
+            <label for="nom">Nom de l’auteur</label>
+            <input id="nom" name="nom" type="text" value="" placeholder="Saisir…" required />
+          </div>
+          <div class="champ">
+            <label for="editeur">Éditeur</label>
+            <input
+              id="editeur"
+              name="editeur"
+              type="text"
+              value=""
+              placeholder="Saisir…"
+              required
+            />
+          </div>
+          <div class="champ">
+            <label for="annee">Année d’édition</label>
+            <input id="annee" name="annee" type="number" value="" placeholder="Saisir…" required />
+          </div>
+          <div class="champ">
+            <label for="pages">Nombre de pages</label>
+            <input
+              id="pages"
+              name="pages"
+              type="number"
+              value=""
+              placeholder="Saisir…"
+              min="1"
+              required
+            />
+          </div>
+          <div class="champ">
+            <label for="couverture">Image de couverture (chemin)</label>
+            <input
+              id="couverture"
+              name="couverture"
+              type="text"
+              value=""
+              placeholder="Saisir…"
+              required
+            />
+          </div>
+        </div>
+        <div class="champ">
+          <label for="extrait">Extrait PDF (chemin relatif)</label>
+          <input
+            id="extrait"
+            name="extrait"
+            type="text"
+            value=""
+            placeholder="/extraits/mon-livre.pdf"
+            required
+          />
+        </div>
+        <div class="champ">
+          <label for="resume">Résumé</label
+          ><textarea id="resume" name="resume" rows="3" placeholder="Saisir…" required></textarea>
+        </div>
+        <div class="actions">
+          <button class="bouton" type="button" title="Maquette statique : action à programmer">
+            Ajouter le livre</button
+          ><button type="button" class="bouton secondaire">Annuler</button>
+        </div>
+      </form>
     </section>
+
     <footer>
       <strong>Passion lecture · Projet de classe</strong>
-      <p>Créé par : [prénoms du groupe] · Contact : [adresse e-mail du groupe]</p>
+
+      <p>Créé par : [prénoms du groupe] &nbsp; · &nbsp; Contact : [adresse e-mail du groupe]</p>
     </footer>
   </div>
 </template>
@@ -483,21 +544,5 @@ textarea {
 }
 .lien-visuel.petit {
   font-size: 14px;
-}
-
-.page {
-  min-height: 100vh;
-}
-.texte-manquant {
-  color: #627269;
-  font-size: 14px;
-}
-.ligne-api {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding: 18px;
-  background: #f7f9f7;
 }
 </style>
