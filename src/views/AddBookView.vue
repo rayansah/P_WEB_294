@@ -13,13 +13,11 @@ async function handleSubmit() {
 <template>
   <div class="page">
     <header class="entete">
-      <button type="button" class="lien-visuel logo">Passion lecture</button>
+      <RouterLink class="logo" :to="{ name: 'home' }">Passion lecture</RouterLink>
       <nav aria-label="Navigation principale">
-        <button type="button" class="lien-visuel">Accueil</button>
-        <button type="button" class="lien-visuel">Catalogue</button>
-        <button type="button" class="lien-visuel">Ajouter un livre</button>
-        <button type="button" class="lien-visuel">Mon profil</button>
-        <button type="button" class="bouton secondaire">Déconnexion</button>
+        <RouterLink :to="{ name: 'home' }">Accueil</RouterLink>
+        <RouterLink :to="{ name: 'books' }">Catalogue</RouterLink>
+        <RouterLink :to="{ name: 'add-book' }">Ajouter un livre</RouterLink>
       </nav>
     </header>
 
