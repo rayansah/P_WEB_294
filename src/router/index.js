@@ -4,6 +4,7 @@ import HomeView from '@/views/HomeView.vue'
 import EditBookView from '@/views/EditBookView.vue'
 import AddBookView from '@/views/AddBookView.vue'
 import DeleteBookView from '@/views/DeleteBookView.vue'
+import LoginView from '@/views/LoginView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +39,11 @@ const router = createRouter({
       path: '/book/:id/delete',
       name: 'delete-book',
       component: DeleteBookView,
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: LoginView,
     },
   ],
 })

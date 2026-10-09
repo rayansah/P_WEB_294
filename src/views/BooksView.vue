@@ -1,6 +1,7 @@
 <script setup>
 import { getBooks } from '@/services/BookService'
 import { onMounted, ref } from 'vue'
+import FavoriteButton from '@/component/FavoriteButton.vue'
 
 const books = ref({})
 
@@ -11,6 +12,13 @@ onMounted(async () => {
   } finally {
   }
 })
+function handlfavorite(id) {
+  if (favoriteIds.value.includes(id)) {
+    favoriteIds.value = favoriteIds.value.filter((favoriteId) => favoriteId !== id)
+  } else {
+    favoriteIds.value.push(id)
+  }
+}
 </script>
 
 <template>
@@ -43,6 +51,10 @@ onMounted(async () => {
             :to="{ name: 'book-detail', params: { id: book.id } }"
             >Voir les détails du livre</RouterLink
           >
+          <FavoriteButton
+            :isFavorite="favoriteIds.includes(book.id)"
+            @toggleFavorite="handlfavorite(book.id)"
+          />
         </li>
       </ul>
     </section>

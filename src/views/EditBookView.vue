@@ -5,7 +5,7 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 const book = ref({})
-//ne s'utilise que lorsque l'on à besoin de composant de base pour le chargement de la page
+//ne s'utilise que lorsque l'on à besoin de composant de base pour le chargement de la page dans ce cas besoin des livre au chargement
 onMounted(async () => {
   try {
     const response = await getBook(route.params.id)
@@ -13,7 +13,7 @@ onMounted(async () => {
   } finally {
   }
 })
-//Pas de un
+//Cette fonction répond uniqment à un événement c'est pour cela qu'elle n'a pas besoin du unmounted
 async function handleSubmit() {
   await updateBook(route.params.id, book.value)
 }

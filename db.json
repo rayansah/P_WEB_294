@@ -1,4 +1,5 @@
 {
+  "login": [{}],
   "books": [
     {
       "id": 4,
@@ -12,10 +13,7 @@
       "publisher": "Christian Bourgois",
       "publicationYear": 1954,
       "averageRating": 3.9,
-      "comments": [
-        "Le récit est vraiment prenant.",
-        "Très bon ouvrage."
-      ],
+      "comments": ["Le récit est vraiment prenant.", "Très bon ouvrage."],
       "coverImage": "/images/le-seigneur-des-anneaux.jpg",
       "postedBy": "Alex"
     },
@@ -31,31 +29,9 @@
       "publisher": "Gallimard Jeunesse",
       "publicationYear": 1998,
       "averageRating": 4,
-      "comments": [
-        "J'ai beaucoup aimé les personnages.",
-        "Très agréable à lire."
-      ],
+      "comments": ["J'ai beaucoup aimé les personnages.", "Très agréable à lire."],
       "coverImage": "/images/harry-potter-a-lecole-des-sorciers.jpg",
       "postedBy": "Nina"
-    },
-    {
-      "id": 6,
-      "title": "L'Étranger",
-      "category": "Roman",
-      "numberOfPages": 184,
-      "excerpt": "/extraits/letranger.pdf",
-      "summary": "Meursault mène une existence ordinaire à Alger et semble étranger aux émotions attendues par la société. Un meurtre bouleverse sa vie et le confronte au jugement des autres.",
-      "authorFirstName": "Albert",
-      "authorLastName": "Camus",
-      "publisher": "Gallimard",
-      "publicationYear": 1942,
-      "averageRating": 4.1,
-      "comments": [
-        "Une lecture qui vaut le détour.",
-        "Une histoire intéressante."
-      ],
-      "coverImage": "/images/letranger.jpg",
-      "postedBy": "Jeremy"
     },
     {
       "id": 7,
@@ -69,10 +45,7 @@
       "publisher": "Le Livre de Poche",
       "publicationYear": 1885,
       "averageRating": 4.2,
-      "comments": [
-        "Très bon ouvrage.",
-        "Je recommande ce livre."
-      ],
+      "comments": ["Très bon ouvrage.", "Je recommande ce livre."],
       "coverImage": "/images/germinal.jpg",
       "postedBy": "Rayan"
     },
@@ -88,10 +61,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1831,
       "averageRating": 4.3,
-      "comments": [
-        "Très agréable à lire.",
-        "Un classique à découvrir."
-      ],
+      "comments": ["Très agréable à lire.", "Un classique à découvrir."],
       "coverImage": "/images/notre-dame-de-paris.jpg",
       "postedBy": "Yassine"
     },
@@ -107,10 +77,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1759,
       "averageRating": 4.4,
-      "comments": [
-        "Une histoire intéressante.",
-        "Le récit est vraiment prenant."
-      ],
+      "comments": ["Une histoire intéressante.", "Le récit est vraiment prenant."],
       "coverImage": "/images/candide.jpg",
       "postedBy": "Alex"
     },
@@ -126,10 +93,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1857,
       "averageRating": 4.5,
-      "comments": [
-        "Je recommande ce livre.",
-        "J'ai beaucoup aimé les personnages."
-      ],
+      "comments": ["Je recommande ce livre.", "J'ai beaucoup aimé les personnages."],
       "coverImage": "/images/madame-bovary.jpg",
       "postedBy": "Nina"
     },
@@ -145,10 +109,7 @@
       "publisher": "Glénat",
       "publicationYear": 2000,
       "averageRating": 4.6,
-      "comments": [
-        "Un classique à découvrir.",
-        "Une lecture qui vaut le détour."
-      ],
+      "comments": ["Un classique à découvrir.", "Une lecture qui vaut le détour."],
       "coverImage": "/images/one-piece---tome-1.jpg",
       "postedBy": "Jeremy"
     },
@@ -164,10 +125,7 @@
       "publisher": "Kana",
       "publicationYear": 2002,
       "averageRating": 4.7,
-      "comments": [
-        "Le récit est vraiment prenant.",
-        "Très bon ouvrage."
-      ],
+      "comments": ["Le récit est vraiment prenant.", "Très bon ouvrage."],
       "coverImage": "/images/naruto---tome-1.jpg",
       "postedBy": "Rayan"
     },
@@ -183,10 +141,7 @@
       "publisher": "Glénat",
       "publicationYear": 1993,
       "averageRating": 4.8,
-      "comments": [
-        "J'ai beaucoup aimé les personnages.",
-        "Très agréable à lire."
-      ],
+      "comments": ["J'ai beaucoup aimé les personnages.", "Très agréable à lire."],
       "coverImage": "/images/dragon-ball---tome-1.jpg",
       "postedBy": "Yassine"
     },
@@ -202,10 +157,7 @@
       "publisher": "Kana",
       "publicationYear": 2007,
       "averageRating": 4.9,
-      "comments": [
-        "Une lecture qui vaut le détour.",
-        "Une histoire intéressante."
-      ],
+      "comments": ["Une lecture qui vaut le détour.", "Une histoire intéressante."],
       "coverImage": "/images/death-note---tome-1.jpg",
       "postedBy": "Alex"
     },
@@ -221,10 +173,7 @@
       "publisher": "Pika",
       "publicationYear": 2013,
       "averageRating": 5,
-      "comments": [
-        "Très bon ouvrage.",
-        "Je recommande ce livre."
-      ],
+      "comments": ["Très bon ouvrage.", "Je recommande ce livre."],
       "coverImage": "/images/attack-on-titan---tome-1.jpg",
       "postedBy": "Nina"
     },
@@ -240,10 +189,7 @@
       "publisher": "Panini Manga",
       "publicationYear": 2017,
       "averageRating": 3.5,
-      "comments": [
-        "Très agréable à lire.",
-        "Un classique à découvrir."
-      ],
+      "comments": ["Très agréable à lire.", "Un classique à découvrir."],
       "coverImage": "/images/demon-slayer---tome-1.jpg",
       "postedBy": "Jeremy"
     },
@@ -259,10 +205,7 @@
       "publisher": "Ki-oon",
       "publicationYear": 2016,
       "averageRating": 3.6,
-      "comments": [
-        "Une histoire intéressante.",
-        "Le récit est vraiment prenant."
-      ],
+      "comments": ["Une histoire intéressante.", "Le récit est vraiment prenant."],
       "coverImage": "/images/my-hero-academia---tome-1.jpg",
       "postedBy": "Rayan"
     },
@@ -278,10 +221,7 @@
       "publisher": "Ki-oon",
       "publicationYear": 2020,
       "averageRating": 3.7,
-      "comments": [
-        "Je recommande ce livre.",
-        "J'ai beaucoup aimé les personnages."
-      ],
+      "comments": ["Je recommande ce livre.", "J'ai beaucoup aimé les personnages."],
       "coverImage": "/images/jujutsu-kaisen---tome-1.jpg",
       "postedBy": "Yassine"
     },
@@ -297,10 +237,7 @@
       "publisher": "Glénat",
       "publicationYear": 2003,
       "averageRating": 3.8,
-      "comments": [
-        "Un classique à découvrir.",
-        "Une lecture qui vaut le détour."
-      ],
+      "comments": ["Un classique à découvrir.", "Une lecture qui vaut le détour."],
       "coverImage": "/images/bleach---tome-1.jpg",
       "postedBy": "Alex"
     },
@@ -316,10 +253,7 @@
       "publisher": "Kana",
       "publicationYear": 2000,
       "averageRating": 3.9,
-      "comments": [
-        "Le récit est vraiment prenant.",
-        "Très bon ouvrage."
-      ],
+      "comments": ["Le récit est vraiment prenant.", "Très bon ouvrage."],
       "coverImage": "/images/hunter-x-hunter---tome-1.jpg",
       "postedBy": "Nina"
     },
@@ -335,10 +269,7 @@
       "publisher": "Hachette",
       "publicationYear": 1961,
       "averageRating": 4,
-      "comments": [
-        "J'ai beaucoup aimé les personnages.",
-        "Très agréable à lire."
-      ],
+      "comments": ["J'ai beaucoup aimé les personnages.", "Très agréable à lire."],
       "coverImage": "/images/asterix-le-gaulois.jpg",
       "postedBy": "Jeremy"
     },
@@ -354,10 +285,7 @@
       "publisher": "Casterman",
       "publicationYear": 1960,
       "averageRating": 4.1,
-      "comments": [
-        "Une lecture qui vaut le détour.",
-        "Une histoire intéressante."
-      ],
+      "comments": ["Une lecture qui vaut le détour.", "Une histoire intéressante."],
       "coverImage": "/images/tintin-au-tibet.jpg",
       "postedBy": "Rayan"
     },
@@ -373,10 +301,7 @@
       "publisher": "Casterman",
       "publicationYear": 1943,
       "averageRating": 4.2,
-      "comments": [
-        "Très bon ouvrage.",
-        "Je recommande ce livre."
-      ],
+      "comments": ["Très bon ouvrage.", "Je recommande ce livre."],
       "coverImage": "/images/le-secret-de-la-licorne.jpg",
       "postedBy": "Yassine"
     },
@@ -392,10 +317,7 @@
       "publisher": "Dupuis",
       "publicationYear": 1963,
       "averageRating": 4.3,
-      "comments": [
-        "Très agréable à lire.",
-        "Un classique à découvrir."
-      ],
+      "comments": ["Très agréable à lire.", "Un classique à découvrir."],
       "coverImage": "/images/les-schtroumpfs-noirs.jpg",
       "postedBy": "Alex"
     },
@@ -411,10 +333,7 @@
       "publisher": "Dargaud",
       "publicationYear": 1983,
       "averageRating": 4.4,
-      "comments": [
-        "Une histoire intéressante.",
-        "Le récit est vraiment prenant."
-      ],
+      "comments": ["Une histoire intéressante.", "Le récit est vraiment prenant."],
       "coverImage": "/images/lucky-luke---daisy-town.jpg",
       "postedBy": "Nina"
     },
@@ -430,10 +349,7 @@
       "publisher": "Dupuis",
       "publicationYear": 1966,
       "averageRating": 4.5,
-      "comments": [
-        "Je recommande ce livre.",
-        "J'ai beaucoup aimé les personnages."
-      ],
+      "comments": ["Je recommande ce livre.", "J'ai beaucoup aimé les personnages."],
       "coverImage": "/images/gaston---gare-aux-gaffes.jpg",
       "postedBy": "Jeremy"
     },
@@ -449,10 +365,7 @@
       "publisher": "Blake et Mortimer",
       "publicationYear": 1950,
       "averageRating": 4.6,
-      "comments": [
-        "Un classique à découvrir.",
-        "Une lecture qui vaut le détour."
-      ],
+      "comments": ["Un classique à découvrir.", "Une lecture qui vaut le détour."],
       "coverImage": "/images/blake-et-mortimer---le-secret-de-lespadon.jpg",
       "postedBy": "Rayan"
     },
@@ -468,10 +381,7 @@
       "publisher": "Dargaud",
       "publicationYear": 1984,
       "averageRating": 4.7,
-      "comments": [
-        "Le récit est vraiment prenant.",
-        "Très bon ouvrage."
-      ],
+      "comments": ["Le récit est vraiment prenant.", "Très bon ouvrage."],
       "coverImage": "/images/xiii---le-jour-du-soleil-noir.jpg",
       "postedBy": "Yassine"
     },
@@ -487,10 +397,7 @@
       "publisher": "Le Lombard",
       "publicationYear": 1980,
       "averageRating": 4.8,
-      "comments": [
-        "J'ai beaucoup aimé les personnages.",
-        "Très agréable à lire."
-      ],
+      "comments": ["J'ai beaucoup aimé les personnages.", "Très agréable à lire."],
       "coverImage": "/images/thorgal---la-magicienne-trahie.jpg",
       "postedBy": "Alex"
     },
@@ -506,10 +413,7 @@
       "publisher": "Delcourt",
       "publicationYear": 2004,
       "averageRating": 4.9,
-      "comments": [
-        "Une lecture qui vaut le détour.",
-        "Une histoire intéressante."
-      ],
+      "comments": ["Une lecture qui vaut le détour.", "Une histoire intéressante."],
       "coverImage": "/images/les-legendaires---la-pierre-de-jovenia.jpg",
       "postedBy": "Nina"
     },
@@ -525,10 +429,7 @@
       "publisher": "Robert Laffont",
       "publicationYear": 1965,
       "averageRating": 5,
-      "comments": [
-        "Très bon ouvrage.",
-        "Je recommande ce livre."
-      ],
+      "comments": ["Très bon ouvrage.", "Je recommande ce livre."],
       "coverImage": "/images/dune.jpg",
       "postedBy": "Jeremy"
     },
@@ -544,10 +445,7 @@
       "publisher": "Denoël",
       "publicationYear": 1951,
       "averageRating": 3.5,
-      "comments": [
-        "Très agréable à lire.",
-        "Un classique à découvrir."
-      ],
+      "comments": ["Très agréable à lire.", "Un classique à découvrir."],
       "coverImage": "/images/fondation.jpg",
       "postedBy": "Rayan"
     },
@@ -563,10 +461,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1953,
       "averageRating": 3.6,
-      "comments": [
-        "Une histoire intéressante.",
-        "Le récit est vraiment prenant."
-      ],
+      "comments": ["Une histoire intéressante.", "Le récit est vraiment prenant."],
       "coverImage": "/images/fahrenheit-451.jpg",
       "postedBy": "Yassine"
     },
@@ -582,10 +477,7 @@
       "publisher": "Pocket",
       "publicationYear": 1932,
       "averageRating": 3.7,
-      "comments": [
-        "Je recommande ce livre.",
-        "J'ai beaucoup aimé les personnages."
-      ],
+      "comments": ["Je recommande ce livre.", "J'ai beaucoup aimé les personnages."],
       "coverImage": "/images/le-meilleur-des-mondes.jpg",
       "postedBy": "Alex"
     },
@@ -601,10 +493,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1898,
       "averageRating": 3.8,
-      "comments": [
-        "Un classique à découvrir.",
-        "Une lecture qui vaut le détour."
-      ],
+      "comments": ["Un classique à découvrir.", "Une lecture qui vaut le détour."],
       "coverImage": "/images/la-guerre-des-mondes.jpg",
       "postedBy": "Nina"
     },
@@ -620,10 +509,7 @@
       "publisher": "J'ai lu",
       "publicationYear": 1984,
       "averageRating": 3.9,
-      "comments": [
-        "Le récit est vraiment prenant.",
-        "Très bon ouvrage."
-      ],
+      "comments": ["Le récit est vraiment prenant.", "Très bon ouvrage."],
       "coverImage": "/images/neuromancien.jpg",
       "postedBy": "Jeremy"
     },
@@ -639,10 +525,7 @@
       "publisher": "Denoël",
       "publicationYear": 1961,
       "averageRating": 4,
-      "comments": [
-        "J'ai beaucoup aimé les personnages.",
-        "Très agréable à lire."
-      ],
+      "comments": ["J'ai beaucoup aimé les personnages.", "Très agréable à lire."],
       "coverImage": "/images/solaris.jpg",
       "postedBy": "Rayan"
     },
@@ -658,10 +541,7 @@
       "publisher": "J'ai lu",
       "publicationYear": 1985,
       "averageRating": 4.1,
-      "comments": [
-        "Une lecture qui vaut le détour.",
-        "Une histoire intéressante."
-      ],
+      "comments": ["Une lecture qui vaut le détour.", "Une histoire intéressante."],
       "coverImage": "/images/la-strategie-ender.jpg",
       "postedBy": "Yassine"
     },
@@ -677,10 +557,7 @@
       "publisher": "Robert Laffont",
       "publicationYear": 1989,
       "averageRating": 4.2,
-      "comments": [
-        "Très bon ouvrage.",
-        "Je recommande ce livre."
-      ],
+      "comments": ["Très bon ouvrage.", "Je recommande ce livre."],
       "coverImage": "/images/hyperion.jpg",
       "postedBy": "Alex"
     },
@@ -696,10 +573,7 @@
       "publisher": "Actes Sud",
       "publicationYear": 2008,
       "averageRating": 4.3,
-      "comments": [
-        "Très agréable à lire.",
-        "Un classique à découvrir."
-      ],
+      "comments": ["Très agréable à lire.", "Un classique à découvrir."],
       "coverImage": "/images/le-probleme-a-trois-corps.jpg",
       "postedBy": "Nina"
     },
@@ -715,10 +589,7 @@
       "publisher": "Christian Bourgois",
       "publicationYear": 1937,
       "averageRating": 4.4,
-      "comments": [
-        "Une histoire intéressante.",
-        "Le récit est vraiment prenant."
-      ],
+      "comments": ["Une histoire intéressante.", "Le récit est vraiment prenant."],
       "coverImage": "/images/le-hobbit.jpg",
       "postedBy": "Jeremy"
     },
@@ -734,10 +605,7 @@
       "publisher": "Pygmalion",
       "publicationYear": 1996,
       "averageRating": 4.5,
-      "comments": [
-        "Je recommande ce livre.",
-        "J'ai beaucoup aimé les personnages."
-      ],
+      "comments": ["Je recommande ce livre.", "J'ai beaucoup aimé les personnages."],
       "coverImage": "/images/le-trone-de-fer.jpg",
       "postedBy": "Rayan"
     },
@@ -753,10 +621,7 @@
       "publisher": "Pygmalion",
       "publicationYear": 1995,
       "averageRating": 4.6,
-      "comments": [
-        "Un classique à découvrir.",
-        "Une lecture qui vaut le détour."
-      ],
+      "comments": ["Un classique à découvrir.", "Une lecture qui vaut le détour."],
       "coverImage": "/images/lassassin-royal.jpg",
       "postedBy": "Yassine"
     },
@@ -772,10 +637,7 @@
       "publisher": "La Volte",
       "publicationYear": 2004,
       "averageRating": 4.7,
-      "comments": [
-        "Le récit est vraiment prenant.",
-        "Très bon ouvrage."
-      ],
+      "comments": ["Le récit est vraiment prenant.", "Très bon ouvrage."],
       "coverImage": "/images/la-horde-du-contrevent.jpg",
       "postedBy": "Alex"
     },
@@ -791,10 +653,7 @@
       "publisher": "Bayard",
       "publicationYear": 2003,
       "averageRating": 4.8,
-      "comments": [
-        "J'ai beaucoup aimé les personnages.",
-        "Très agréable à lire."
-      ],
+      "comments": ["J'ai beaucoup aimé les personnages.", "Très agréable à lire."],
       "coverImage": "/images/eragon.jpg",
       "postedBy": "Nina"
     },
@@ -810,10 +669,7 @@
       "publisher": "Rageot",
       "publicationYear": 2003,
       "averageRating": 4.9,
-      "comments": [
-        "Une lecture qui vaut le détour.",
-        "Une histoire intéressante."
-      ],
+      "comments": ["Une lecture qui vaut le détour.", "Une histoire intéressante."],
       "coverImage": "/images/la-quete-dewilan.jpg",
       "postedBy": "Jeremy"
     },
@@ -829,10 +685,7 @@
       "publisher": "Bragelonne",
       "publicationYear": 2007,
       "averageRating": 5,
-      "comments": [
-        "Très bon ouvrage.",
-        "Je recommande ce livre."
-      ],
+      "comments": ["Très bon ouvrage.", "Je recommande ce livre."],
       "coverImage": "/images/le-nom-du-vent.jpg",
       "postedBy": "Rayan"
     },
@@ -848,10 +701,7 @@
       "publisher": "Bragelonne",
       "publicationYear": 1993,
       "averageRating": 3.5,
-      "comments": [
-        "Très agréable à lire.",
-        "Un classique à découvrir."
-      ],
+      "comments": ["Très agréable à lire.", "Un classique à découvrir."],
       "coverImage": "/images/le-sorceleur---le-dernier-vœu.jpg",
       "postedBy": "Yassine"
     },
@@ -867,10 +717,7 @@
       "publisher": "Bragelonne",
       "publicationYear": 1994,
       "averageRating": 3.6,
-      "comments": [
-        "Une histoire intéressante.",
-        "Le récit est vraiment prenant."
-      ],
+      "comments": ["Une histoire intéressante.", "Le récit est vraiment prenant."],
       "coverImage": "/images/lepee-de-verite.jpg",
       "postedBy": "Alex"
     },
@@ -886,10 +733,7 @@
       "publisher": "Orbit",
       "publicationYear": 2006,
       "averageRating": 3.7,
-      "comments": [
-        "Je recommande ce livre.",
-        "J'ai beaucoup aimé les personnages."
-      ],
+      "comments": ["Je recommande ce livre.", "J'ai beaucoup aimé les personnages."],
       "coverImage": "/images/mistborn---lempire-ultime.jpg",
       "postedBy": "Nina"
     },
@@ -905,10 +749,7 @@
       "publisher": "Le Livre de Poche",
       "publicationYear": 1844,
       "averageRating": 3.8,
-      "comments": [
-        "Un classique à découvrir.",
-        "Une lecture qui vaut le détour."
-      ],
+      "comments": ["Un classique à découvrir.", "Une lecture qui vaut le détour."],
       "coverImage": "/images/le-comte-de-monte-cristo.jpg",
       "postedBy": "Jeremy"
     },
@@ -924,10 +765,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1844,
       "averageRating": 3.9,
-      "comments": [
-        "Le récit est vraiment prenant.",
-        "Très bon ouvrage."
-      ],
+      "comments": ["Le récit est vraiment prenant.", "Très bon ouvrage."],
       "coverImage": "/images/les-trois-mousquetaires.jpg",
       "postedBy": "Rayan"
     },
@@ -943,10 +781,7 @@
       "publisher": "Le Livre de Poche",
       "publicationYear": 1885,
       "averageRating": 4,
-      "comments": [
-        "J'ai beaucoup aimé les personnages.",
-        "Très agréable à lire."
-      ],
+      "comments": ["J'ai beaucoup aimé les personnages.", "Très agréable à lire."],
       "coverImage": "/images/bel-ami.jpg",
       "postedBy": "Yassine"
     },
@@ -962,10 +797,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1830,
       "averageRating": 4.1,
-      "comments": [
-        "Une lecture qui vaut le détour.",
-        "Une histoire intéressante."
-      ],
+      "comments": ["Une lecture qui vaut le détour.", "Une histoire intéressante."],
       "coverImage": "/images/le-rouge-et-le-noir.jpg",
       "postedBy": "Alex"
     },
@@ -981,10 +813,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1947,
       "averageRating": 4.2,
-      "comments": [
-        "Très bon ouvrage.",
-        "Je recommande ce livre."
-      ],
+      "comments": ["Très bon ouvrage.", "Je recommande ce livre."],
       "coverImage": "/images/la-peste.jpg",
       "postedBy": "Nina"
     },
@@ -1000,10 +829,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1883,
       "averageRating": 4.3,
-      "comments": [
-        "Très agréable à lire.",
-        "Un classique à découvrir."
-      ],
+      "comments": ["Très agréable à lire.", "Un classique à découvrir."],
       "coverImage": "/images/au-bonheur-des-dames.jpg",
       "postedBy": "Jeremy"
     },
@@ -1019,10 +845,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1835,
       "averageRating": 4.4,
-      "comments": [
-        "Une histoire intéressante.",
-        "Le récit est vraiment prenant."
-      ],
+      "comments": ["Une histoire intéressante.", "Le récit est vraiment prenant."],
       "coverImage": "/images/le-pere-goriot.jpg",
       "postedBy": "Rayan"
     },
@@ -1038,10 +861,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1933,
       "averageRating": 4.5,
-      "comments": [
-        "Je recommande ce livre.",
-        "J'ai beaucoup aimé les personnages."
-      ],
+      "comments": ["Je recommande ce livre.", "J'ai beaucoup aimé les personnages."],
       "coverImage": "/images/la-condition-humaine.jpg",
       "postedBy": "Yassine"
     },
@@ -1057,10 +877,7 @@
       "publisher": "Hetzel",
       "publicationYear": 1864,
       "averageRating": 4.6,
-      "comments": [
-        "Un classique à découvrir.",
-        "Une lecture qui vaut le détour."
-      ],
+      "comments": ["Un classique à découvrir.", "Une lecture qui vaut le détour."],
       "coverImage": "/images/voyage-au-centre-de-la-terre.jpg",
       "postedBy": "Alex"
     },
@@ -1076,10 +893,7 @@
       "publisher": "Hetzel",
       "publicationYear": 1870,
       "averageRating": 4.7,
-      "comments": [
-        "Le récit est vraiment prenant.",
-        "Très bon ouvrage."
-      ],
+      "comments": ["Le récit est vraiment prenant.", "Très bon ouvrage."],
       "coverImage": "/images/vingt-mille-lieues-sous-les-mers.jpg",
       "postedBy": "Nina"
     },
@@ -1095,10 +909,7 @@
       "publisher": "Hetzel",
       "publicationYear": 1874,
       "averageRating": 4.8,
-      "comments": [
-        "J'ai beaucoup aimé les personnages.",
-        "Très agréable à lire."
-      ],
+      "comments": ["J'ai beaucoup aimé les personnages.", "Très agréable à lire."],
       "coverImage": "/images/lîle-mysterieuse.jpg",
       "postedBy": "Jeremy"
     },
@@ -1114,10 +925,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1719,
       "averageRating": 4.9,
-      "comments": [
-        "Une lecture qui vaut le détour.",
-        "Une histoire intéressante."
-      ],
+      "comments": ["Une lecture qui vaut le détour.", "Une histoire intéressante."],
       "coverImage": "/images/robinson-crusoe.jpg",
       "postedBy": "Rayan"
     },
@@ -1133,10 +941,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1883,
       "averageRating": 5,
-      "comments": [
-        "Très bon ouvrage.",
-        "Je recommande ce livre."
-      ],
+      "comments": ["Très bon ouvrage.", "Je recommande ce livre."],
       "coverImage": "/images/lîle-au-tresor.jpg",
       "postedBy": "Yassine"
     },
@@ -1152,10 +957,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1851,
       "averageRating": 3.5,
-      "comments": [
-        "Très agréable à lire.",
-        "Un classique à découvrir."
-      ],
+      "comments": ["Très agréable à lire.", "Un classique à découvrir."],
       "coverImage": "/images/moby-dick.jpg",
       "postedBy": "Alex"
     },
@@ -1171,10 +973,7 @@
       "publisher": "Hetzel",
       "publicationYear": 1872,
       "averageRating": 3.6,
-      "comments": [
-        "Une histoire intéressante.",
-        "Le récit est vraiment prenant."
-      ],
+      "comments": ["Une histoire intéressante.", "Le récit est vraiment prenant."],
       "coverImage": "/images/le-tour-du-monde-en-quatre-vingts-jours.jpg",
       "postedBy": "Nina"
     },
@@ -1190,10 +989,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1906,
       "averageRating": 3.7,
-      "comments": [
-        "Je recommande ce livre.",
-        "J'ai beaucoup aimé les personnages."
-      ],
+      "comments": ["Je recommande ce livre.", "J'ai beaucoup aimé les personnages."],
       "coverImage": "/images/croc-blanc.jpg",
       "postedBy": "Jeremy"
     },
@@ -1209,10 +1005,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1903,
       "averageRating": 3.8,
-      "comments": [
-        "Un classique à découvrir.",
-        "Une lecture qui vaut le détour."
-      ],
+      "comments": ["Un classique à découvrir.", "Une lecture qui vaut le détour."],
       "coverImage": "/images/lappel-de-la-foret.jpg",
       "postedBy": "Rayan"
     },
@@ -1228,10 +1021,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1876,
       "averageRating": 3.9,
-      "comments": [
-        "Le récit est vraiment prenant.",
-        "Très bon ouvrage."
-      ],
+      "comments": ["Le récit est vraiment prenant.", "Très bon ouvrage."],
       "coverImage": "/images/les-aventures-de-tom-sawyer.jpg",
       "postedBy": "Yassine"
     },
@@ -1247,10 +1037,7 @@
       "publisher": "Le Livre de Poche",
       "publicationYear": 1887,
       "averageRating": 4,
-      "comments": [
-        "J'ai beaucoup aimé les personnages.",
-        "Très agréable à lire."
-      ],
+      "comments": ["J'ai beaucoup aimé les personnages.", "Très agréable à lire."],
       "coverImage": "/images/sherlock-holmes---une-etude-en-rouge.jpg",
       "postedBy": "Alex"
     },
@@ -1266,10 +1053,7 @@
       "publisher": "Le Livre de Poche",
       "publicationYear": 1934,
       "averageRating": 4.1,
-      "comments": [
-        "Une lecture qui vaut le détour.",
-        "Une histoire intéressante."
-      ],
+      "comments": ["Une lecture qui vaut le détour.", "Une histoire intéressante."],
       "coverImage": "/images/le-crime-de-lorient-express.jpg",
       "postedBy": "Nina"
     },
@@ -1285,10 +1069,7 @@
       "publisher": "Le Livre de Poche",
       "publicationYear": 1939,
       "averageRating": 4.2,
-      "comments": [
-        "Très bon ouvrage.",
-        "Je recommande ce livre."
-      ],
+      "comments": ["Très bon ouvrage.", "Je recommande ce livre."],
       "coverImage": "/images/dix-petits-negres.jpg",
       "postedBy": "Jeremy"
     },
@@ -1304,10 +1085,7 @@
       "publisher": "Le Livre de Poche",
       "publicationYear": 1902,
       "averageRating": 4.3,
-      "comments": [
-        "Très agréable à lire.",
-        "Un classique à découvrir."
-      ],
+      "comments": ["Très agréable à lire.", "Un classique à découvrir."],
       "coverImage": "/images/le-chien-des-baskerville.jpg",
       "postedBy": "Rayan"
     },
@@ -1323,10 +1101,7 @@
       "publisher": "Actes Sud",
       "publicationYear": 2005,
       "averageRating": 4.4,
-      "comments": [
-        "Une histoire intéressante.",
-        "Le récit est vraiment prenant."
-      ],
+      "comments": ["Une histoire intéressante.", "Le récit est vraiment prenant."],
       "coverImage": "/images/millenium---les-hommes-qui-naimaient-pas-les-femmes.jpg",
       "postedBy": "Yassine"
     },
@@ -1342,10 +1117,7 @@
       "publisher": "JC Lattès",
       "publicationYear": 2003,
       "averageRating": 4.5,
-      "comments": [
-        "Je recommande ce livre.",
-        "J'ai beaucoup aimé les personnages."
-      ],
+      "comments": ["Je recommande ce livre.", "J'ai beaucoup aimé les personnages."],
       "coverImage": "/images/da-vinci-code.jpg",
       "postedBy": "Alex"
     },
@@ -1361,10 +1133,7 @@
       "publisher": "Rivages",
       "publicationYear": 2003,
       "averageRating": 4.6,
-      "comments": [
-        "Un classique à découvrir.",
-        "Une lecture qui vaut le détour."
-      ],
+      "comments": ["Un classique à découvrir.", "Une lecture qui vaut le détour."],
       "coverImage": "/images/shutter-island.jpg",
       "postedBy": "Nina"
     },
@@ -1380,10 +1149,7 @@
       "publisher": "Sonatine",
       "publicationYear": 2012,
       "averageRating": 4.7,
-      "comments": [
-        "Le récit est vraiment prenant.",
-        "Très bon ouvrage."
-      ],
+      "comments": ["Le récit est vraiment prenant.", "Très bon ouvrage."],
       "coverImage": "/images/gone-girl.jpg",
       "postedBy": "Jeremy"
     },
@@ -1399,10 +1165,7 @@
       "publisher": "Sonatine",
       "publicationYear": 2015,
       "averageRating": 4.8,
-      "comments": [
-        "J'ai beaucoup aimé les personnages.",
-        "Très agréable à lire."
-      ],
+      "comments": ["J'ai beaucoup aimé les personnages.", "Très agréable à lire."],
       "coverImage": "/images/la-fille-du-train.jpg",
       "postedBy": "Rayan"
     },
@@ -1418,10 +1181,7 @@
       "publisher": "Albin Michel",
       "publicationYear": 1987,
       "averageRating": 4.9,
-      "comments": [
-        "Une lecture qui vaut le détour.",
-        "Une histoire intéressante."
-      ],
+      "comments": ["Une lecture qui vaut le détour.", "Une histoire intéressante."],
       "coverImage": "/images/misery.jpg",
       "postedBy": "Yassine"
     },
@@ -1437,10 +1197,7 @@
       "publisher": "Albin Michel",
       "publicationYear": 1986,
       "averageRating": 5,
-      "comments": [
-        "Très bon ouvrage.",
-        "Je recommande ce livre."
-      ],
+      "comments": ["Très bon ouvrage.", "Je recommande ce livre."],
       "coverImage": "/images/ca.jpg",
       "postedBy": "Alex"
     },
@@ -1456,10 +1213,7 @@
       "publisher": "JC Lattès",
       "publicationYear": 1977,
       "averageRating": 3.5,
-      "comments": [
-        "Très agréable à lire.",
-        "Un classique à découvrir."
-      ],
+      "comments": ["Très agréable à lire.", "Un classique à découvrir."],
       "coverImage": "/images/shining.jpg",
       "postedBy": "Nina"
     },
@@ -1475,10 +1229,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1897,
       "averageRating": 3.6,
-      "comments": [
-        "Une histoire intéressante.",
-        "Le récit est vraiment prenant."
-      ],
+      "comments": ["Une histoire intéressante.", "Le récit est vraiment prenant."],
       "coverImage": "/images/dracula.jpg",
       "postedBy": "Jeremy"
     },
@@ -1494,10 +1245,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1818,
       "averageRating": 3.7,
-      "comments": [
-        "Je recommande ce livre.",
-        "J'ai beaucoup aimé les personnages."
-      ],
+      "comments": ["Je recommande ce livre.", "J'ai beaucoup aimé les personnages."],
       "coverImage": "/images/frankenstein.jpg",
       "postedBy": "Rayan"
     },
@@ -1513,10 +1261,7 @@
       "publisher": "Anne Carrière",
       "publicationYear": 1988,
       "averageRating": 3.8,
-      "comments": [
-        "Un classique à découvrir.",
-        "Une lecture qui vaut le détour."
-      ],
+      "comments": ["Un classique à découvrir.", "Une lecture qui vaut le détour."],
       "coverImage": "/images/lalchimiste.jpg",
       "postedBy": "Yassine"
     },
@@ -1532,10 +1277,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1952,
       "averageRating": 3.9,
-      "comments": [
-        "Le récit est vraiment prenant.",
-        "Très bon ouvrage."
-      ],
+      "comments": ["Le récit est vraiment prenant.", "Très bon ouvrage."],
       "coverImage": "/images/le-vieil-homme-et-la-mer.jpg",
       "postedBy": "Alex"
     },
@@ -1551,10 +1293,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1937,
       "averageRating": 4,
-      "comments": [
-        "J'ai beaucoup aimé les personnages.",
-        "Très agréable à lire."
-      ],
+      "comments": ["J'ai beaucoup aimé les personnages.", "Très agréable à lire."],
       "coverImage": "/images/des-souris-et-des-hommes.jpg",
       "postedBy": "Nina"
     },
@@ -1570,10 +1309,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1813,
       "averageRating": 4.1,
-      "comments": [
-        "Une lecture qui vaut le détour.",
-        "Une histoire intéressante."
-      ],
+      "comments": ["Une lecture qui vaut le détour.", "Une histoire intéressante."],
       "coverImage": "/images/orgueil-et-prejuges.jpg",
       "postedBy": "Jeremy"
     },
@@ -1589,10 +1325,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1847,
       "averageRating": 4.2,
-      "comments": [
-        "Très bon ouvrage.",
-        "Je recommande ce livre."
-      ],
+      "comments": ["Très bon ouvrage.", "Je recommande ce livre."],
       "coverImage": "/images/jane-eyre.jpg",
       "postedBy": "Rayan"
     },
@@ -1608,10 +1341,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1847,
       "averageRating": 4.3,
-      "comments": [
-        "Très agréable à lire.",
-        "Un classique à découvrir."
-      ],
+      "comments": ["Très agréable à lire.", "Un classique à découvrir."],
       "coverImage": "/images/les-hauts-de-hurlevent.jpg",
       "postedBy": "Yassine"
     },
@@ -1627,10 +1357,7 @@
       "publisher": "Fayard",
       "publicationYear": 1985,
       "averageRating": 4.4,
-      "comments": [
-        "Une histoire intéressante.",
-        "Le récit est vraiment prenant."
-      ],
+      "comments": ["Une histoire intéressante.", "Le récit est vraiment prenant."],
       "coverImage": "/images/le-parfum.jpg",
       "postedBy": "Alex"
     },
@@ -1646,10 +1373,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1945,
       "averageRating": 4.5,
-      "comments": [
-        "Je recommande ce livre.",
-        "J'ai beaucoup aimé les personnages."
-      ],
+      "comments": ["Je recommande ce livre.", "J'ai beaucoup aimé les personnages."],
       "coverImage": "/images/la-ferme-des-animaux.jpg",
       "postedBy": "Nina"
     },
@@ -1665,10 +1389,7 @@
       "publisher": "Albin Michel",
       "publicationYear": 2011,
       "averageRating": 4.6,
-      "comments": [
-        "Un classique à découvrir.",
-        "Une lecture qui vaut le détour."
-      ],
+      "comments": ["Un classique à découvrir.", "Une lecture qui vaut le détour."],
       "coverImage": "/images/sapiens.jpg",
       "postedBy": "Jeremy"
     },
@@ -1684,10 +1405,7 @@
       "publisher": "Albin Michel",
       "publicationYear": 2015,
       "averageRating": 4.7,
-      "comments": [
-        "Le récit est vraiment prenant.",
-        "Très bon ouvrage."
-      ],
+      "comments": ["Le récit est vraiment prenant.", "Très bon ouvrage."],
       "coverImage": "/images/homo-deus.jpg",
       "postedBy": "Rayan"
     },
@@ -1703,10 +1421,7 @@
       "publisher": "Flammarion",
       "publicationYear": -500,
       "averageRating": 4.8,
-      "comments": [
-        "J'ai beaucoup aimé les personnages.",
-        "Très agréable à lire."
-      ],
+      "comments": ["J'ai beaucoup aimé les personnages.", "Très agréable à lire."],
       "coverImage": "/images/lart-de-la-guerre.jpg",
       "postedBy": "Yassine"
     },
@@ -1722,10 +1437,7 @@
       "publisher": "Flammarion",
       "publicationYear": 180,
       "averageRating": 4.9,
-      "comments": [
-        "Une lecture qui vaut le détour.",
-        "Une histoire intéressante."
-      ],
+      "comments": ["Une lecture qui vaut le détour.", "Une histoire intéressante."],
       "coverImage": "/images/meditations.jpg",
       "postedBy": "Alex"
     },
@@ -1741,10 +1453,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1942,
       "averageRating": 5,
-      "comments": [
-        "Très bon ouvrage.",
-        "Je recommande ce livre."
-      ],
+      "comments": ["Très bon ouvrage.", "Je recommande ce livre."],
       "coverImage": "/images/le-mythe-de-sisyphe.jpg",
       "postedBy": "Nina"
     },
@@ -1760,10 +1469,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1883,
       "averageRating": 3.5,
-      "comments": [
-        "Très agréable à lire.",
-        "Un classique à découvrir."
-      ],
+      "comments": ["Très agréable à lire.", "Un classique à découvrir."],
       "coverImage": "/images/ainsi-parlait-zarathoustra.jpg",
       "postedBy": "Jeremy"
     },
@@ -1779,10 +1485,7 @@
       "publisher": "Flammarion",
       "publicationYear": -380,
       "averageRating": 3.6,
-      "comments": [
-        "Une histoire intéressante.",
-        "Le récit est vraiment prenant."
-      ],
+      "comments": ["Une histoire intéressante.", "Le récit est vraiment prenant."],
       "coverImage": "/images/le-banquet.jpg",
       "postedBy": "Rayan"
     },
@@ -1798,10 +1501,7 @@
       "publisher": "Flammarion",
       "publicationYear": 1637,
       "averageRating": 3.7,
-      "comments": [
-        "Je recommande ce livre.",
-        "J'ai beaucoup aimé les personnages."
-      ],
+      "comments": ["Je recommande ce livre.", "J'ai beaucoup aimé les personnages."],
       "coverImage": "/images/discours-de-la-methode.jpg",
       "postedBy": "Yassine"
     },
@@ -1817,10 +1517,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1857,
       "averageRating": 3.8,
-      "comments": [
-        "Un classique à découvrir.",
-        "Une lecture qui vaut le détour."
-      ],
+      "comments": ["Un classique à découvrir.", "Une lecture qui vaut le détour."],
       "coverImage": "/images/les-fleurs-du-mal.jpg",
       "postedBy": "Alex"
     },
@@ -1836,10 +1533,7 @@
       "publisher": "Gallimard",
       "publicationYear": 1913,
       "averageRating": 3.9,
-      "comments": [
-        "Le récit est vraiment prenant.",
-        "Très bon ouvrage."
-      ],
+      "comments": ["Le récit est vraiment prenant.", "Très bon ouvrage."],
       "coverImage": "/images/alcools.jpg",
       "postedBy": "Nina"
     },
