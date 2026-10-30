@@ -1,18 +1,52 @@
 <script setup>
 import { getBook } from '@/services/BookService'
 import { updateBook } from '@/services/BookService'
-import { ref, onMounted } from 'vue'
+import { getComments } from '@/services/BookService'
+import { addComment } from '@/services/BookService'
+import { ref, onMounted, computed } from 'vue'
 import { useRoute } from 'vue-router'
 const route = useRoute()
 const book = ref(null)
+const comments = ref([])
 
 onMounted(async () => {
   try {
     const response = await getBook(route.params.id)
     book.value = response.data
+
+    const responseComments = await getComments(route.params.id)
+    comments.value = responseComments.data
   } finally {
   }
 })
+
+const ratingCount = computed(() => comments.value.length)
+
+const average = computed(() => {
+  if (comments.value.length === 0) return 0
+  const total = comments.value.reduce((sum, c) => sum + c.rating, 0)
+  return (total / comments.value.length).toFixed(1)
+})
+
+const rating = ref(null)
+const text = ref('')
+
+async function submitComment() {
+  if (rating.value === null) {
+    alert('Choisis une note')
+    return
+  }
+  await addComment({
+    bookId: Number(route.params.id),
+    pseudo: 'Jeremy', // provisoire, remplacé quand la connexion sera finie
+    rating: rating.value,
+    text: text.value,
+  })
+  const response = await getComments(route.params.id)
+  comments.value = response.data
+  rating.value = null
+  text.value = ''
+}
 </script>
 
 <template>
@@ -23,6 +57,7 @@ onMounted(async () => {
         <RouterLink :to="{ name: 'home' }">Accueil</RouterLink>
         <RouterLink :to="{ name: 'books' }">Catalogue</RouterLink>
         <RouterLink :to="{ name: 'add-book' }">Ajouter un livre</RouterLink>
+        <RouterLink :to="{ name: 'my-books' }">Mes livres</RouterLink>
       </nav>
     </header>
     <section class="contenu" aria-label="Détail du livre">
@@ -39,7 +74,7 @@ onMounted(async () => {
           </div>
         </div>
         <h2 class="sous-titre">Résumé</h2>
-        <p class="texte-manquant">{{ book.comments }}</p>
+        <p class="texte-manquant">{{ book.summary }}</p>
         <!-- Actions visuelles seulement. Les droits et fonctions seront ajoutés plus tard. -->
         <div class="actions">
           <RouterLink :to="{ name: 'edit-book', params: { id: book.id } }">
@@ -51,25 +86,39 @@ onMounted(async () => {
           </RouterLink>
         </div>
         <h2 class="sous-titre">Donner mon avis</h2>
-        <div class="actions" aria-label="Note sur cinq">
-          <button class="bouton secondaire" type="button">0</button>
-          <button class="bouton secondaire" type="button">1</button>
-          <button class="bouton secondaire" type="button">2</button>
-          <button class="bouton secondaire" type="button">3</button>
-          <button class="bouton secondaire" type="button">4</button>
-          <button class="bouton secondaire" type="button">5</button>
-        </div>
-        <div class="champ">
-          <label for="commentaire">Mon commentaire</label>
-          <textarea
-            id="commentaire"
-            rows="3"
-            placeholder="Écris ce que tu as pensé de ce livre…"
-          ></textarea>
-        </div>
-        <button class="bouton" type="button">Publier mon avis</button>
+        <form class="formulaire" @submit.prevent="submitComment">
+          <div class="actions" aria-label="Note sur cinq">
+            <button
+              v-for="n in [0, 1, 2, 3, 4, 5]"
+              :key="n"
+              type="button"
+              class="bouton"
+              :class="{ secondaire: rating !== n }"
+              @click="rating = n"
+            >
+              {{ n }}
+            </button>
+          </div>
+          <div class="champ">
+            <label for="commentaire">Mon commentaire</label>
+            <textarea
+              id="commentaire"
+              rows="3"
+              placeholder="Écris ce que tu as pensé de ce livre…"
+              v-model="text"
+              required
+            ></textarea>
+          </div>
+          <button class="bouton" type="submit">Publier mon avis</button>
+        </form>
         <h2 class="sous-titre">Commentaires</h2>
-        <p class="texte-manquant">Les commentaires et la moyenne des notes seront affichés ici.</p>
+        <p>{{ ratingCount }} appréciation(s) · moyenne : {{ average }}/5</p>
+        <p v-if="comments.length === 0" class="texte-manquant">Aucun commentaire pour le moment.</p>
+        <div v-for="comment in comments" :key="comment.id" class="ligne-api">
+          <strong>{{ comment.pseudo }}</strong>
+          <span>Note : {{ comment.rating }}/5</span>
+          <p>{{ comment.text }}</p>
+        </div>
       </div>
     </section>
     <footer>

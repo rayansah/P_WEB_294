@@ -9,27 +9,5 @@ GET                 /account/:id            NON                     OUI (Validat
 PUT                 /account/:id            OUI                     NON (Modification de compte)
 GET                 /books/:id/comments     NON
 POST                /books/:id/comments     OUI
-// Exemple computed avec agrégation (reduce)
-// Additionne les prix de tous les livres
-
-const totalPrixLivres = computed(() => {
-  return books.value.reduce((total, book) => {
-    return total + Number(book.price || 0)
-  }, 0)
-})
-// Calcule le nombre total de livres
-const totalBooks = computed(() => {
-  return books.value.length
-})
-
-// Filtre les livres qui sont des romans
-const romans = computed(() => {
-  return books.value.filter(book => book.genre === 'Roman')
-})
-
-// Calcule le nombre de romans
-const totalRomans = computed(() => {
-  return romans.value.length
-})
 
 npx json-server --watch db.json

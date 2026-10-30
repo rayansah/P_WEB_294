@@ -2,12 +2,27 @@
 <script setup>
 import { addBook, getBooks } from '@/services/BookService'
 import { ref } from 'vue'
-
+import { findAuthor, addAuthor } from '@/services/Authorservice'
 const book = ref({})
 
 async function handleSubmit() {
-  await addBook(book.value)
-  alert('Votre livre a bien enregistré ')
+  const firstName = book.value.authorFirstName.trim()
+  const lastName = book.value.authorLastName.trim()
+
+  const response = await findAuthor(firstName, lastName)
+
+  if (response.data.length === 0) {
+    await addAuthor({ firstName, lastName })
+  }
+
+  await addBook({
+    ...book.value,
+    authorFirstName: firstName,
+    authorLastName: lastName,
+    postedBy: 'Jeremy',
+  })
+
+  alert('Votre livre a bien été enregistré')
 }
 </script>
 <template>
@@ -18,6 +33,7 @@ async function handleSubmit() {
         <RouterLink :to="{ name: 'home' }">Accueil</RouterLink>
         <RouterLink :to="{ name: 'books' }">Catalogue</RouterLink>
         <RouterLink :to="{ name: 'add-book' }">Ajouter un livre</RouterLink>
+        <RouterLink :to="{ name: 'my-books' }">Mes livres</RouterLink>
       </nav>
     </header>
 
@@ -132,7 +148,7 @@ async function handleSubmit() {
             placeholder="/extraits/mon-livre.pdf"
             v-model="book.excerpt"
             required
-          />summary
+          />
         </div>
         <div class="champ">
           <label for="resume">Résumé</label

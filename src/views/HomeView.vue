@@ -18,6 +18,7 @@ onMounted(async () => {
         <RouterLink :to="{ name: 'home' }">Accueil</RouterLink>
         <RouterLink :to="{ name: 'books' }">Catalogue</RouterLink>
         <RouterLink :to="{ name: 'add-book' }">Ajouter un livre</RouterLink>
+        <RouterLink :to="{ name: 'my-books' }">Mes livres</RouterLink>
       </nav>
     </header>
     <section class="contenu" aria-labelledby="accueil-titre">

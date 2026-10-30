@@ -3,15 +3,14 @@ import { getBooks } from '@/services/BookService'
 import { onMounted, ref } from 'vue'
 import FavoriteButton from '@/component/FavoriteButton.vue'
 
-const books = ref({})
+const books = ref([])
+const favoriteIds = ref([])
 
 onMounted(async () => {
-  try {
-    const response = await getBooks()
-    books.value = response.data
-  } finally {
-  }
+  const response = await getBooks()
+  books.value = response.data
 })
+
 function handlfavorite(id) {
   if (favoriteIds.value.includes(id)) {
     favoriteIds.value = favoriteIds.value.filter((favoriteId) => favoriteId !== id)
@@ -29,6 +28,7 @@ function handlfavorite(id) {
         <RouterLink :to="{ name: 'home' }">Accueil</RouterLink>
         <RouterLink :to="{ name: 'books' }">Catalogue</RouterLink>
         <RouterLink :to="{ name: 'add-book' }">Ajouter un livre</RouterLink>
+        <RouterLink :to="{ name: 'my-books' }">Mes livres</RouterLink>
       </nav>
     </header>
     <section class="contenu" aria-labelledby="catalogue-titre">
@@ -45,6 +45,7 @@ function handlfavorite(id) {
       <!-- Ta boucle et ton lien dynamique sont conservés. -->
       <ul class="liste-livres">
         <li class="ligne-api" v-for="book in books" :key="book.id">
+          <img :src="book.coverImage" :alt="'Couverture de ' + book.title" class="image-livre" />
           <h2 class="titre-livre">{{ book.title }}</h2>
           <RouterLink
             class="bouton secondaire"
@@ -512,5 +513,11 @@ textarea {
   gap: 16px;
   padding: 18px;
   background: #f7f9f7;
+}
+.image-livre {
+  width: 120px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 </style>

@@ -30,3 +30,15 @@ export const addBook = (book) => {
 export const deletBook = (id, book) => {
   return apiClient.delete(`/books/${id}`, book)
 }
+
+export const findUser = (pseudo, password) => {
+  return apiClient.get('/users', { params: { pseudo, password } })
+}
+
+export const getComments = (bookId) => {
+  return apiClient.get('/comments', { params: { bookId } })
+}
+
+export const addComment = (comment) => {
+  return apiClient.post('/comments', comment)
+}

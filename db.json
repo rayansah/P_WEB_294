@@ -1,5 +1,36 @@
 {
-  "login": [{}],
+  "users": [
+    {
+      "id": 1,
+      "pseudo": "Jeremy",
+      "password": "1234",
+      "role": "user",
+      "joinDate": "2026-01-15"
+    },
+    {
+      "id": 2,
+      "pseudo": "Admin",
+      "password": "admin",
+      "role": "admin",
+      "joinDate": "2026-01-01"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "bookId": 4,
+      "pseudo": "Jeremy",
+      "rating": 4,
+      "text": "Un très beau livre."
+    },
+    {
+      "bookId": 4,
+      "pseudo": "Jeremy",
+      "rating": 3,
+      "text": "Ca va ",
+      "id": 2
+    }
+  ],
   "books": [
     {
       "id": 4,
@@ -1536,19 +1567,423 @@
       "comments": ["Le récit est vraiment prenant.", "Très bon ouvrage."],
       "coverImage": "/images/alcools.jpg",
       "postedBy": "Nina"
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "firstName": "Antoine",
+      "lastName": "de Saint-Exupéry"
     },
     {
-      "title": "Dragon Ball - Tome 1",
-      "category": "Roman",
-      "authorFirstName": "rg",
-      "authorLastName": "rwg",
-      "publisher": "rge",
-      "publicationYear": 1,
-      "coverImage": "arg",
-      "numberOfPages": 12,
-      "excerpt": "arg",
-      "summary": "arg",
-      "id": 101
+      "id": 2,
+      "firstName": "George",
+      "lastName": "Orwell"
+    },
+    {
+      "id": 3,
+      "firstName": "Victor",
+      "lastName": "Hugo"
+    },
+    {
+      "id": 4,
+      "firstName": "J.R.R.",
+      "lastName": "Tolkien"
+    },
+    {
+      "id": 5,
+      "firstName": "J.K.",
+      "lastName": "Rowling"
+    },
+    {
+      "id": 6,
+      "firstName": "Albert",
+      "lastName": "Camus"
+    },
+    {
+      "id": 7,
+      "firstName": "Émile",
+      "lastName": "Zola"
+    },
+    {
+      "id": 8,
+      "firstName": "Voltaire",
+      "lastName": ""
+    },
+    {
+      "id": 9,
+      "firstName": "Gustave",
+      "lastName": "Flaubert"
+    },
+    {
+      "id": 10,
+      "firstName": "Eiichiro",
+      "lastName": "Oda"
+    },
+    {
+      "id": 11,
+      "firstName": "Masashi",
+      "lastName": "Kishimoto"
+    },
+    {
+      "id": 12,
+      "firstName": "Akira",
+      "lastName": "Toriyama"
+    },
+    {
+      "id": 13,
+      "firstName": "Tsugumi",
+      "lastName": "Ohba"
+    },
+    {
+      "id": 14,
+      "firstName": "Hajime",
+      "lastName": "Isayama"
+    },
+    {
+      "id": 15,
+      "firstName": "Koyoharu",
+      "lastName": "Gotouge"
+    },
+    {
+      "id": 16,
+      "firstName": "Kohei",
+      "lastName": "Horikoshi"
+    },
+    {
+      "id": 17,
+      "firstName": "Gege",
+      "lastName": "Akutami"
+    },
+    {
+      "id": 18,
+      "firstName": "Tite",
+      "lastName": "Kubo"
+    },
+    {
+      "id": 19,
+      "firstName": "Yoshihiro",
+      "lastName": "Togashi"
+    },
+    {
+      "id": 20,
+      "firstName": "René",
+      "lastName": "Goscinny"
+    },
+    {
+      "id": 21,
+      "firstName": "Georges",
+      "lastName": "Remi"
+    },
+    {
+      "id": 22,
+      "firstName": "Peyo",
+      "lastName": ""
+    },
+    {
+      "id": 23,
+      "firstName": "Morris",
+      "lastName": ""
+    },
+    {
+      "id": 24,
+      "firstName": "André",
+      "lastName": "Franquin"
+    },
+    {
+      "id": 25,
+      "firstName": "Edgar P.",
+      "lastName": "Jacobs"
+    },
+    {
+      "id": 26,
+      "firstName": "Jean",
+      "lastName": "Van Hamme"
+    },
+    {
+      "id": 27,
+      "firstName": "Patrick",
+      "lastName": "Sobral"
+    },
+    {
+      "id": 28,
+      "firstName": "Frank",
+      "lastName": "Herbert"
+    },
+    {
+      "id": 29,
+      "firstName": "Isaac",
+      "lastName": "Asimov"
+    },
+    {
+      "id": 30,
+      "firstName": "Ray",
+      "lastName": "Bradbury"
+    },
+    {
+      "id": 31,
+      "firstName": "Aldous",
+      "lastName": "Huxley"
+    },
+    {
+      "id": 32,
+      "firstName": "H.G.",
+      "lastName": "Wells"
+    },
+    {
+      "id": 33,
+      "firstName": "William",
+      "lastName": "Gibson"
+    },
+    {
+      "id": 34,
+      "firstName": "Stanislaw",
+      "lastName": "Lem"
+    },
+    {
+      "id": 35,
+      "firstName": "Orson Scott",
+      "lastName": "Card"
+    },
+    {
+      "id": 36,
+      "firstName": "Dan",
+      "lastName": "Simmons"
+    },
+    {
+      "id": 37,
+      "firstName": "Liu",
+      "lastName": "Cixin"
+    },
+    {
+      "id": 38,
+      "firstName": "George R.R.",
+      "lastName": "Martin"
+    },
+    {
+      "id": 39,
+      "firstName": "Robin",
+      "lastName": "Hobb"
+    },
+    {
+      "id": 40,
+      "firstName": "Alain",
+      "lastName": "Damasio"
+    },
+    {
+      "id": 41,
+      "firstName": "Christopher",
+      "lastName": "Paolini"
+    },
+    {
+      "id": 42,
+      "firstName": "Pierre",
+      "lastName": "Bottero"
+    },
+    {
+      "id": 43,
+      "firstName": "Patrick",
+      "lastName": "Rothfuss"
+    },
+    {
+      "id": 44,
+      "firstName": "Andrzej",
+      "lastName": "Sapkowski"
+    },
+    {
+      "id": 45,
+      "firstName": "Terry",
+      "lastName": "Goodkind"
+    },
+    {
+      "id": 46,
+      "firstName": "Brandon",
+      "lastName": "Sanderson"
+    },
+    {
+      "id": 47,
+      "firstName": "Alexandre",
+      "lastName": "Dumas"
+    },
+    {
+      "id": 48,
+      "firstName": "Guy",
+      "lastName": "de Maupassant"
+    },
+    {
+      "id": 49,
+      "firstName": "Stendhal",
+      "lastName": ""
+    },
+    {
+      "id": 50,
+      "firstName": "Honoré",
+      "lastName": "de Balzac"
+    },
+    {
+      "id": 51,
+      "firstName": "André",
+      "lastName": "Malraux"
+    },
+    {
+      "id": 52,
+      "firstName": "Jules",
+      "lastName": "Verne"
+    },
+    {
+      "id": 53,
+      "firstName": "Daniel",
+      "lastName": "Defoe"
+    },
+    {
+      "id": 54,
+      "firstName": "Robert Louis",
+      "lastName": "Stevenson"
+    },
+    {
+      "id": 55,
+      "firstName": "Herman",
+      "lastName": "Melville"
+    },
+    {
+      "id": 56,
+      "firstName": "Jack",
+      "lastName": "London"
+    },
+    {
+      "id": 57,
+      "firstName": "Mark",
+      "lastName": "Twain"
+    },
+    {
+      "id": 58,
+      "firstName": "Arthur Conan",
+      "lastName": "Doyle"
+    },
+    {
+      "id": 59,
+      "firstName": "Agatha",
+      "lastName": "Christie"
+    },
+    {
+      "id": 60,
+      "firstName": "Stieg",
+      "lastName": "Larsson"
+    },
+    {
+      "id": 61,
+      "firstName": "Dan",
+      "lastName": "Brown"
+    },
+    {
+      "id": 62,
+      "firstName": "Dennis",
+      "lastName": "Lehane"
+    },
+    {
+      "id": 63,
+      "firstName": "Gillian",
+      "lastName": "Flynn"
+    },
+    {
+      "id": 64,
+      "firstName": "Paula",
+      "lastName": "Hawkins"
+    },
+    {
+      "id": 65,
+      "firstName": "Stephen",
+      "lastName": "King"
+    },
+    {
+      "id": 66,
+      "firstName": "Bram",
+      "lastName": "Stoker"
+    },
+    {
+      "id": 67,
+      "firstName": "Mary",
+      "lastName": "Shelley"
+    },
+    {
+      "id": 68,
+      "firstName": "Paulo",
+      "lastName": "Coelho"
+    },
+    {
+      "id": 69,
+      "firstName": "Ernest",
+      "lastName": "Hemingway"
+    },
+    {
+      "id": 70,
+      "firstName": "John",
+      "lastName": "Steinbeck"
+    },
+    {
+      "id": 71,
+      "firstName": "Jane",
+      "lastName": "Austen"
+    },
+    {
+      "id": 72,
+      "firstName": "Charlotte",
+      "lastName": "Brontë"
+    },
+    {
+      "id": 73,
+      "firstName": "Emily",
+      "lastName": "Brontë"
+    },
+    {
+      "id": 74,
+      "firstName": "Patrick",
+      "lastName": "Süskind"
+    },
+    {
+      "id": 75,
+      "firstName": "Yuval Noah",
+      "lastName": "Harari"
+    },
+    {
+      "id": 76,
+      "firstName": "Sun",
+      "lastName": "Tzu"
+    },
+    {
+      "id": 77,
+      "firstName": "Marc",
+      "lastName": "Aurèle"
+    },
+    {
+      "id": 78,
+      "firstName": "Friedrich",
+      "lastName": "Nietzsche"
+    },
+    {
+      "id": 79,
+      "firstName": "Platon",
+      "lastName": ""
+    },
+    {
+      "id": 80,
+      "firstName": "René",
+      "lastName": "Descartes"
+    },
+    {
+      "id": 81,
+      "firstName": "Charles",
+      "lastName": "Baudelaire"
+    },
+    {
+      "id": 82,
+      "firstName": "Guillaume",
+      "lastName": "Apollinaire"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Auteur",
+      "id": 83
     }
   ]
 }
