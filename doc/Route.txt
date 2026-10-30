@@ -31,3 +31,5 @@ const romans = computed(() => {
 const totalRomans = computed(() => {
   return romans.value.length
 })
+
+npx json-server --watch db.json

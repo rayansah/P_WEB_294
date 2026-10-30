@@ -2,14 +2,11 @@
 import { getBooks } from '@/services/BookService'
 import { onMounted, ref } from 'vue'
 
-const books = ref({})
+const books = ref([])
 
 onMounted(async () => {
-  try {
-    const response = await getBooks()
-    books.value = response.data.slice(1, 6)
-  } finally {
-  }
+  const response = await getBooks()
+  books.value = response.data.sort((a, b) => b.id - a.id).slice(0, 5)
 })
 </script>
 
@@ -33,7 +30,7 @@ onMounted(async () => {
       <!-- Emplacement visuel seulement : le script de cette vue reste vide.
            Les cinq derniers livres seront reliés à l’API dans ton développement. -->
       <div class="grille-livres">
-        <article v-for="book in books" class="carte-livre">
+        <article v-for="book in books" class="carte-livre" :key="book.id">
           <RouterLink :to="{ name: 'book-detail', params: { id: book.id } }">
             <div class="couverture">Couverture</div>
             <h3>{{ book.title }}</h3>
